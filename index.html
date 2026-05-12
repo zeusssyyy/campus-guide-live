@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Institute of Technology - Campus Guide</title>
+    <meta name="description"
+        content="Interactive campus guide and map for Heritage Institute of Technology, Kolkata, India.">
+
+    <!-- Google Fonts: Outfit for modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Boxicons for modern icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <i class='bx bxs-graduation'></i>
+            <span>HITK Guide</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#map">Campus Map</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#schedule">Class Timings</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#events">Events</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <img src="https://www.heritageit.edu/imagesHITK/HIT1_270625.jpg"
+                alt="Heritage Institute of Technology Aerial View">
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Heritage Institute of Technology">Heritage Institute of Technology</h1>
+            <p class="subtitle">Welcome to your ultimate interactive campus experience in Kolkata, India.</p>
+            <div class="cta-buttons">
+                <a href="#map" class="btn btn-primary">Explore Campus</a>
+                <a href="#events" class="btn btn-secondary">Upcoming Events</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll to Discover</span>
+            <i class='bx bx-chevron-down'></i>
+        </div>
+    </header>
+
+    <!-- Map Section -->
+    <section class="section" id="map">
+        <div class="section-header">
+            <h2>Interactive <span class="highlight">Campus Map</span></h2>
+            <p>Navigate the sprawling high-tech campus with ease.</p>
+        </div>
+        <div class="map-container">
+            <div class="map-wrapper">
+                <img src="assets/map.png" alt="3D Campus Map" id="campus-map-img">
+
+                <!-- Map Hotspots -->
+                <div class="hotspot" style="top: 30%; left: 45%;" data-title="Central Library"
+                    data-desc="State-of-the-art reading spaces and vast collections.">
+                    <div class="pulse-ring"></div>
+                    <i class='bx bxs-book-reader'></i>
+                </div>
+                <div class="hotspot" style="top: 60%; left: 70%;" data-title="Tech Labs"
+                    data-desc="Advanced laboratories for CSE, ECE, and IT.">
+                    <div class="pulse-ring"></div>
+                    <i class='bx bxs-microchip'></i>
+                </div>
+                <div class="hotspot" style="top: 45%; left: 20%;" data-title="Cafeteria"
+                    data-desc="Multi-cuisine food court and hang-out spot.">
+                    <div class="pulse-ring"></div>
+                    <i class='bx bxs-coffee'></i>
+                </div>
+                <div class="hotspot" style="top: 75%; left: 40%;" data-title="Main Auditorium"
+                    data-desc="Events, seminars, and cultural fests.">
+                    <div class="pulse-ring"></div>
+                    <i class='bx bxs-microphone-alt'></i>
+                </div>
+            </div>
+
+            <div class="map-info-panel glass-panel" id="map-info">
+                <h3>Select a location</h3>
+                <p>Click on the glowing hotspots on the map to view details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Locations Directory -->
+    <section class="section bg-darker" id="locations">
+        <div class="section-header">
+            <h2>Key <span class="highlight">Locations</span></h2>
+            <p>Discover the landmarks of HITK.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="academic">Academic</button>
+            <button class="filter-btn" data-filter="recreation">Recreation</button>
+            <button class="filter-btn" data-filter="amenity">Amenities</button>
+        </div>
+
+        <div class="grid-container" id="location-grid">
+            <!-- Location Cards -->
+            <div class="card location-card mix academic">
+                <div class="card-img">
+                    <img src="https://www.heritageit.edu/imagesHITK/HIT1_270625.jpg" alt="Central Library">
+                    <div class="card-badge">Academic</div>
+                </div>
+                <div class="card-content">
+                    <h3>Central Library</h3>
+                    <p>Housed in a spacious, centrally air-conditioned hall covering 20,000 sq. ft. Features thousands
+                        of titles and online subscriptions, fully automated with LIBSYS.</p>
+                    <a href="#" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+
+            <!-- Placeholder Cards for other locations -->
+            <div class="card location-card mix academic">
+                <div class="card-img">
+                    <div class="placeholder-img bg-gradient-1">
+                        <i class='bx bx-laptop'></i>
+                    </div>
+                    <div class="card-badge">Academic</div>
+                </div>
+                <div class="card-content">
+                    <h3>ICT Bhavan</h3>
+                    <p>The hub of computer science and IT departments featuring cutting edge labs.</p>
+                    <a href="#" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+
+            <div class="card location-card mix recreation">
+                <div class="card-img">
+                    <div class="placeholder-img bg-gradient-2">
+                        <i class='bx bx-football'></i>
+                    </div>
+                    <div class="card-badge">Recreation</div>
+                </div>
+                <div class="card-content">
+                    <h3>Sports Complex & Playground</h3>
+                    <p>Extensive outdoor facilities for cricket, football, basketball, and golf, plus indoor table
+                        tennis and carrom.</p>
+                    <a href="#" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+
+            <div class="card location-card mix amenity">
+                <div class="card-img">
+                    <div class="placeholder-img bg-gradient-3">
+                        <i class='bx bxs-pizza'></i>
+                    </div>
+                    <div class="card-badge">Amenity</div>
+                </div>
+                <div class="card-content">
+                    <h3>Main Cafeteria (Canteen)</h3>
+                    <p>Accommodates over 200 students. Offers a variety of multi-cuisine lunch options and snacks
+                        prepared in a hygienic kitchen at reasonable prices.</p>
+                    <a href="#" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Timings Section -->
+    <section class="section" id="schedule">
+        <div class="section-header">
+            <h2>Class <span class="highlight">Timings</span></h2>
+            <p>Stay on track with your daily academic schedule.</p>
+        </div>
+
+        <div class="schedule-container glass-panel">
+            <div class="schedule-controls">
+                <div class="input-group">
+                    <label for="dept-select">Department</label>
+                    <select id="dept-select" class="glass-select">
+                        <option value="" disabled selected>Select Department</option>
+                        <option value="cse">Computer Science & Engineering</option>
+                        <option value="it">Information Technology</option>
+                        <option value="ece">Electronics & Communication</option>
+                        <option value="aeie">Applied Electronics & Instrumentation</option>
+                        <option value="bt">Biotechnology</option>
+                        <option value="che">Chemical Engineering</option>
+                        <option value="ce">Civil Engineering</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="sec-select">Section</label>
+                    <select id="sec-select" class="glass-select" disabled>
+                        <option value="" disabled selected>Select Section</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="schedule-placeholder" class="placeholder-message">
+                <div class="icon-wrapper" style="margin: 0 auto 20px;"><i class='bx bx-calendar'></i></div>
+                <h3>B.Tech 2nd Year (4th Semester)</h3>
+                <p>Please select your Department and Section above to view the respective class timings.</p>
+            </div>
+
+            <div id="schedule-display" style="display: none;">
+                <div class="schedule-tabs" id="dynamic-tabs">
+                    <button class="tab-btn active" data-day="monday">Monday</button>
+                    <button class="tab-btn" data-day="tuesday">Tuesday</button>
+                    <button class="tab-btn" data-day="wednesday">Wednesday</button>
+                    <button class="tab-btn" data-day="thursday">Thursday</button>
+                    <button class="tab-btn" data-day="friday">Friday</button>
+                </div>
+                <div class="schedule-content" id="schedule-content-area">
+                    <!-- Dynamic content injected here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Resources -->
+    <section class="section bg-darker" id="resources">
+        <div class="section-header">
+            <h2>Student <span class="highlight">Resources</span></h2>
+            <p>Everything you need to succeed at HITK.</p>
+        </div>
+        <div class="resources-grid">
+            <div class="resource-item glass-panel hover-glow">
+                <div class="icon-wrapper"><i class='bx bx-plus-medical'></i></div>
+                <h3>Medical Unit</h3>
+                <p>On-campus first-aid and medical consultation services.</p>
+                <button class="btn btn-outline">View Details</button>
+            </div>
+            <div class="resource-item glass-panel hover-glow">
+                <div class="icon-wrapper"><i class='bx bxs-briefcase'></i></div>
+                <h3>Placement Cell</h3>
+                <p>Career guidance, training, and recruitment drives.</p>
+                <button class="btn btn-outline">View Details</button>
+            </div>
+            <div class="resource-item glass-panel hover-glow">
+                <div class="icon-wrapper"><i class='bx bxs-user-voice'></i></div>
+                <h3>Counseling</h3>
+                <p>Confidential mental health support and academic advising.</p>
+                <button class="btn btn-outline">View Details</button>
+            </div>
+            <div class="resource-item glass-panel hover-glow">
+                <div class="icon-wrapper"><i class='bx bxs-bus'></i></div>
+                <h3>Transport</h3>
+                <p>Bus routes covering major parts of Kolkata.</p>
+                <button class="btn btn-outline">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class='bx bxs-graduation'></i> HITK Guide
+            </div>
+            <p>&copy; 2026 Heritage Institute of Technology Guide.</p>
+            <div class="socials">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

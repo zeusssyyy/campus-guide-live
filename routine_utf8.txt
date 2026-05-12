@@ -1,0 +1,1557 @@
+﻿
+
+
+<!DOCTYPE html />
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+
+<head><title>
+	Heritage Institute of Technology
+</title><meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" /><meta name="google-site-verification" content="iaRxNsG6uAha9UY79kfscgjoSxR7jw-cziNQPaNJh3w" />
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    <link href="css/HeaderFooter.css" rel="stylesheet" type="text/css" /><link href="css/reset.css" rel="stylesheet" type="text/css" charset="utf-8" /><link href="css/style.css" rel="stylesheet" type="text/css" charset="utf-8" /><link href="css/NewMenu3.css" rel="stylesheet" type="text/css" />
+
+    
+    <script src="js/Blink.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        blinkeffect('#txtblnk');
+    })
+    function blinkeffect(selector) {
+        $(selector).fadeOut('slow', function () {
+            $(this).fadeIn('slow', function () {
+                blinkeffect(this);
+            });
+        });
+    }
+    $(function () {
+        blinkeffect1('#txtblnk1');
+    })
+    function blinkeffect1(selector) {
+        $(selector).fadeOut('slow', function () {
+            $(this).fadeIn('slow', function () {
+                blinkeffect(this);
+            });
+        });
+    }
+
+    $(function () {
+        blinkeffect1('#txtblnk2');
+    })
+    function blinkeffect2(selector) {
+        $(selector).fadeOut('slow', function () {
+            $(this).fadeIn('slow', function () {
+                blinkeffect(this);
+            });
+        });
+    }
+
+    $(function () {
+        blinkeffect1('#txtblnk3');
+    })
+    function blinkeffect2(selector) {
+        $(selector).fadeOut('slow', function () {
+            $(this).fadeIn('slow', function () {
+                blinkeffect(this);
+            });
+        });
+    }
+
+    $(function () {
+        blinkeffect1('#txtblnk6');
+    })
+    function blinkeffect2(selector) {
+        $(selector).fadeOut('slow', function () {
+            $(this).fadeIn('slow', function () {
+                blinkeffect(this);
+            });
+        });
+    }
+</script>
+
+<style type="text/css">
+.visibleDiv
+{
+    position: fixed;
+    
+    top: 10px;
+    right: 10px;
+}
+.visibleDiv, #topRight
+{
+    opacity: 0.9;
+    position: fixed;
+    width: 120px;
+    height:38px;
+    border: solid 2px #E794FF;
+    vertical-align: middle;
+    background: #FA021C;
+    text-align: center;  
+    /*color:Black;*/
+    font-family:Arial;
+    font-weight:bold;
+    font-size:14px;  
+    text-align:center;
+    padding:5px 5px 5px 5px;
+}
+
+#topRight
+{
+    top: 454px;
+    left: 0px;
+    z-index:9999;
+}
+
+.visibleDiv, #topRight3
+{
+    opacity: 0.9;
+    position: fixed;
+    width: 120px;
+    height:26px;
+    border: solid 2px #E794FF;
+    vertical-align: middle;
+    background: #B10086;
+    text-align: center;  
+    color:white;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:21px;  
+    text-align:center;
+    padding:5px 5px 5px 5px;
+}
+
+#topRight3
+{
+    top: 570px;
+    left: 0px;
+    z-index:9999;
+}
+
+.visibleDiv, #topRight2
+{
+    opacity: 0.9;
+    position: fixed;
+    width: 114px;
+    height:20px;
+    border: solid 2px #E794FF;
+    vertical-align: middle;
+    background: #75FF88;
+    text-align: center;  
+    color:Black;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:21px;  
+    padding:8px 8px 8px 8px;
+}
+
+#topRight2
+{
+    top: 412px;
+    left: 0px;
+    z-index:9999;
+}
+
+
+.visibleDiv, #topRight1
+{
+    opacity: 0.9;
+    position: fixed;
+    width: 120px;
+    height:40px;
+    border: solid 2px #E794FF;
+    vertical-align: middle;
+    background: Yellow;
+    text-align: center;  
+    color:Black;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:14px;  
+    text-align:center;
+    padding:5px 5px 5px 5px;
+}
+#topRight1
+{
+    top: 410px;
+    left: 0px;
+    z-index:9999;
+}
+
+.visibleDiv, #topRight4
+{
+    opacity: 0.95;
+    position: fixed;
+    width: 120px;
+    height:23px;
+    border: solid 2px #E794FF;
+    vertical-align: middle;
+    background: #fffbba;
+    text-align: center;  
+    /*color:Black;*/
+    font-family:Arial;
+    font-weight:bold;
+    font-size:21px;  
+    text-align:center;
+    padding:5px 5px 5px 5px;
+}
+#topRight4
+{
+    top: 333px;
+    left: 0px;
+    z-index:9999;
+}
+
+
+.visibleDiv, #topRight5
+{
+    opacity: 0.95;
+    position: fixed;
+    width: 120px;
+    height:45px;
+    border: solid 2px Black;
+    vertical-align: middle;
+    background: #FF8CF6;
+    text-align: center;  
+    color:black;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:16px;  
+    text-align:center;
+    padding:5px 5px 5px 5px;
+}
+#topRight5
+{
+    top: 508px;
+    left: 0px;
+    z-index:9999;
+}
+
+
+
+		#topRight8
+        {
+            top: 373px;
+            left: 0px;
+            z-index:9999;
+        }
+        .visibleDiv, #topRight8
+        {
+            opacity: 0.9;
+            position: fixed;
+            width: 120px;
+            height:20px;
+            border: solid 2px #E794FF;
+            vertical-align: middle;
+            background: #416e00;
+            text-align: center;  
+            color:White;
+            font-family:Arial;
+            font-weight:bold;
+            font-size:14px;  
+            text-align:center;
+            padding:5px 5px 5px 5px;
+        }
+        
+        
+        #topRight10
+        {
+            top: 395px;
+            right: 0px;
+            z-index:9999;
+        }
+        .visibleDiv, #topRight10
+        {
+            opacity: 0.9;
+            position: fixed;
+            width: 134px;
+            height:45px;
+            border: solid 2px #E794FF;
+            vertical-align: middle;
+            background: #223402;
+            text-align: center;  
+            color:White;
+            font-family:Arial;
+            font-weight:bold;
+            font-size:14px;  
+            text-align:center;
+            padding:5px 5px 5px 5px;
+        }
+        
+.visibleDiv, #topRight6
+{
+    opacity: 0.95;
+    position: fixed;
+    width: 120px;
+    height:32px;
+    border: solid 2px #E794FF;
+    vertical-align: middle;
+    background: #01fdfa;
+    text-align: center;  
+    color:white;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:21px;  
+    text-align:center;
+    padding:5px 5px 5px 5px;
+}
+#topRight6
+{
+    top: 462px;
+    left: 0px;
+    z-index:9999;
+}    
+
+
+.visibleDiv, #topRight10
+{
+    opacity: 0.9;
+    position: fixed;
+    width: 140px;
+    height:50px;
+    border: solid 2px #E794FF;
+    vertical-align: middle;
+    background: #5FF6D6;
+    text-align: center;  
+    color:Black;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:14px;  
+    text-align:center;
+    padding:5px 5px 5px 5px;
+}
+#topRight10
+{
+    top: 560px;
+    left: 0px;
+    z-index:9999;
+}    
+        
+        /*BLINKING		*/
+	    @-webkit-keyframes invalid8 {
+          from { background-color: #FFFFFF; }
+          to { background-color: #4f1e00; }
+        }
+        @-moz-keyframes invalid8 {
+          from { background-color: #FFFFFF; }
+          to { background-color: #4f1e00;}
+        }
+        @-o-keyframes invalid8 {
+          from { background-color: #FFFFFF;}
+          to { background-color: #4f1e00;}
+        }
+        @-ms-keyframes invalid8 {
+          from { background-color: #FFFFFF;}
+          to { background-color: #4f1e00;}
+        }
+        @keyframes invalid8 {
+          from { background-color: #FFFFFF;}
+          to { background-color: #4f1e00;}
+        }
+            .invalid8 {
+          -webkit-animation: invalid8 1s infinite; /* Safari 4+ */
+          -moz-animation:    invalid8 1s infinite; /* Fx 5+ */
+          -o-animation:      invalid8 1s infinite; /* Opera 12+ */
+          -ms-animation:      invalid8 1s infinite; /* Opera 12+ */
+          animation:         invalid8 1s infinite; /* IE 10+ */
+        }
+        
+        /*BLINKING		*/
+	    @-webkit-keyframes invalid9 {
+          from { background-color: #a9d5ff; color:Black;}
+          to { background-color: #fff8a9; color:Black;}
+        }
+        @-moz-keyframes invalid9 {
+          from { background-color: #a9d5ff; color:Black;}
+          to { background-color: #fff8a9; color:Black;}
+        }
+        @-o-keyframes invalid9 {
+          from { background-color: #a9d5ff; color:Black;}
+          to { background-color: #fff8a9; color:Black;}
+        }
+        @-ms-keyframes invalid9 {
+          from { background-color: #a9d5ff; color:Black;}
+          to { background-color: #fff8a9; color:Black;}
+        }
+        @keyframes invalid9 {
+          from { background-color: #a9d5ff; color:Black;}
+          to { background-color: #fff8a9; color:Black;}
+        }
+        .invalid9 {
+          -webkit-animation: invalid9 1s infinite; /* Safari 4+ */
+          -moz-animation:    invalid9 1s infinite; /* Fx 5+ */
+          -o-animation:      invalid9 1s infinite; /* Opera 12+ */
+          -ms-animation:     invalid9 1s infinite; /* Opera 12+ */
+          animation:         invalid9 1s infinite; /* IE 10+ */
+        }
+      
+      
+        /*DRAWING VERITICAL LINE*/
+        .vl {
+          border-left: 2px solid #00346a;;
+          height: 82px;
+        }
+        /*=======================*/ 
+</style>
+
+
+
+
+
+
+
+
+
+    
+<style type="text/css">
+    #Ann1
+    {
+            height:545px;
+            overflow:scroll;
+    }
+    #event1
+    {
+            height:170px;
+            overflow:scroll;
+            margin:0px;
+            top:-10px;
+            vertical-align:top;
+            padding-top:0px;
+            
+        }
+    .kb-button {
+     font-family: Arial, sans-serif;	
+     float: right;
+     height: 25px;
+     line-height: 30px;
+     font-size: 12px;
+     -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+     -o--border-radius: 3px;
+     -ms--border-radius: 3px;
+     border-radius:3px;
+     vertical-align:middle;
+    }
+</style>
+<script src="js/crawler.js" type="text/javascript"></script>
+
+<script language="JavaScript" type="text/javascript">
+    function autoResize(id) {
+        var newheight = 0;
+        var newwidth = 0;
+
+        if (document.getElementById) {
+            newheight = document.getElementById(id).contentWindow.document.body.scrollHeight;
+            newwidth = document.getElementById(id).contentWindow.document.body.scrollWidth;
+        }
+
+        document.getElementById(id).height = (newheight) + 10 + "px";
+        document.getElementById(id).width = (newwidth) + "px";
+    }
+</script>
+<meta name="description" content="Best Engineering College,Engineering Colleges in Kolkata,HITK ,HIT-K,Heritage Institute of Technology,Heritage, Autonomous Engineering College,Autonomous College,Best Autonomous Engineering College in Kolkata,Best Engineering College in Kolkata,Best Engineering College in India,B.Tech courses,M.Tech Courses,MCA,Best B.Tech College,Best B.Tech Colleges,Best M.Tech College,Best M.Tech Colleges,Best MCA College,Best MCA Colleges,B.Tech,M.Tech,MCA,Kolkata, Calcutta,Premium Institute in Kolkata,Premium Institutes in Kolkata,Character Development,Collaborative Learning ,Creative Thinking,Design Thinking,Digital Storytelling,Emotional Intelligence(SEL),Exercise and Movement,Flipped Classroom,Growth Mindset,Humor,Intrinsic Motivation,Makerspaces,Metacognition,Positive Education,Project - Based Learning,Scaffolding,Workshop Model,Heritage college Kolkata,HIT Kolkata,Heritage engineering college,HIT Kolkata official website,Heritage Institute of Technology BTech courses,HIT Kolkata courses offered,Heritage college CSE fees,Heritage Institute of Technology departments,HIT Kolkata engineering branches,Heritage Institute of Technology admission 2025,HIT Kolkata BTech admission process,Heritage Institute of Technology eligibility criteria,Heritage college direct admission,Heritage Institute of Technology entrance exam,WBJEE Heritage cutoff,Engineering Colleges in Kolkata,HIT Kolkata fee structure,Heritage Institute of Technology BTech fees,Heritage engineering college scholarship,HIT college hostel and tuition fees,Heritage Institute of Technology location,HIT Kolkata campus,Heritage college address,HIT Kolkata hostel facility,Heritage Institute of Technology transportation,Heritage Institute of Technology review,Heritage engineering college ranking,HIT Kolkata placement review,Heritage college student experience,Is Heritage Kolkata good for CSE ?,HIT Kolkata placement 2024,Heritage Institute of Technology average package,Heritage college top recruiters,HIT Kolkata placement record CSE,Heritage Institute of Technology fest,HIT Kolkata campus life,Heritage Institute of Technology library,HIT Kolkata faculty quality," /><meta name="keywords" content="HITK ,HIT-K,Heritage Institute of Technology,Heritage, Autonomous Engineering College,Autonomous College,Best Autonomous Engineering College in Kolkata,Best Engineering College in Kolkata,Best Engineering College in India,B.Tech courses,M.Tech Courses,MCA,Best B.Tech College,Best B.Tech Colleges,Best M.Tech College,Best M.Tech Colleges,Best MCA College,Best MCA Colleges,B.Tech,M.Tech,MCA,Kolkata, Calcutta,Premium Institute in Kolkata,Premium Institutes in Kolkata,Character Development,Collaborative Learning ,Creative Thinking,Design Thinking,Digital Storytelling,Emotional Intelligence(SEL),Exercise and Movement,Flipped Classroom,Growth Mindset,Humor,Intrinsic Motivation,Makerspaces,Metacognition,Positive Education,Project - Based Learning,Scaffolding,Workshop Model,Heritage college Kolkata,HIT Kolkata,Heritage engineering college,HIT Kolkata official website,Heritage Institute of Technology BTech courses,HIT Kolkata courses offered,Heritage college CSE fees,Heritage Institute of Technology departments,HIT Kolkata engineering branches,Heritage Institute of Technology admission 2025,HIT Kolkata BTech admission process,Heritage Institute of Technology eligibility criteria,Heritage college direct admission,Heritage Institute of Technology entrance exam,WBJEE Heritage cutoff,Engineering Colleges in Kolkata,HIT Kolkata fee structure,Heritage Institute of Technology BTech fees,Heritage engineering college scholarship,HIT college hostel and tuition fees,Heritage Institute of Technology location,HIT Kolkata campus,Heritage college address,HIT Kolkata hostel facility,Heritage Institute of Technology transportation,Heritage Institute of Technology review,Heritage engineering college ranking,HIT Kolkata placement review,Heritage college student experience,Is Heritage Kolkata good for CSE ?,HIT Kolkata placement 2024,Heritage Institute of Technology average package,Heritage college top recruiters,HIT Kolkata placement record CSE,Heritage Institute of Technology fest,HIT Kolkata campus life,Heritage Institute of Technology library,HIT Kolkata faculty quality, " /></head>
+<body>
+    
+    <div id="headerbg">
+        <div id="container">
+            <table style="width:1000px;height:5px;white-space:nowrap;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="color:White;text-align:left;vertical-align:middle;">
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+     </div>
+    <div id="headerbg1">
+        <div id="container1">
+            <table style="width:1000px;height:90px;white-space:nowrap;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="width:100px;">
+                        <a href="index.aspx" style="text-decoration:none;">
+                        
+                        <img src="imagesHITK/HIT1_270625.jpg" style="width:110px;height:90px;" alt="logo" />
+                        </a>   
+                    </td>
+                    <td style="width:380px;" align="left" valign="top">
+                        <font style="font-family:Times New Roman;font-weight:bold;font-size:24px;position:absolute;top:2px;">Heritage Institute of Technology</font><br />
+                        <font style="font-family:Arial;font-size:14px;font-style:italic;position:absolute;top:28px;">Where learning is an interactive evolutionary process</font><br />
+                        <a href="https://makautwb.ac.in/" target="_blank" style="text-decoration:none;" title="Click here to go to MAKAUT, WB website"><font style="font-family:Arial;font-size:13px;color:#0197DD;font-weight:bold;position:absolute;top:47px;">An Autonomous Institution affiliated to MAKAUT, West Bengal</font></a>
+                        <font style="font-family:Arial;font-size:12px;color:#FF6102;position:absolute;top:67px;font-style:italic;font-weight:bold;">(Accredited with 'A' Grade by NAAC w.e.f. 12/07/2022)</font>
+                    </td>
+                    <td style="width:360px;" align="left" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" style="width:280px;height:82px;" align="right">
+                            <tr>
+                                <td rowspan="2" style="width:10px;text-align:left;">
+                                    <div class="vl"></div>
+                                </td>
+                                <td rowspan="2" style="width:82px;">
+                                    <a href="https://makautwb.ac.in/" target="_blank" style="text-decoration:none;">
+                                        <img src="images/MakautWB.png" height="85" width="85" title="Click here to go to MAKAUT, WB website" alt="MAKAUT" />
+                                    </a>
+                                </td>
+                                <td style="width:5px;">
+                                
+                                </td>
+                                <td style="width:65px;text-align:right;">
+                                    <a href="https://heritageit.edu/TEQIP.aspx" target="_parent" style="text-decoration:none;">
+                                        <img src="images/teqip.png" height="65" width="65" style="" title="TEQIP Phase-II World Bank project approved by Ministry of HRD." alt="TEQIP" />
+                                     </a>
+                                </td>
+                                <td style="width:5px;">
+                                
+                                </td>
+                                <td>
+                                    <div id="TEQIP" style="position:relative;top:1px;left:1px;">
+                                        &nbsp;
+                                        <a href="PDF/NAAC-SSR.pdf" target="_blank">
+                                        <span id="ctl00_Label1" style="text-decoration:none;color:White;font-size:15px;text-decoration:underline;position:relative;top:8px;font-weight:bold;">NAAC-</span><br />
+                                        <span id="ctl00_Label2" style="text-decoration:none;color:White;font-size:15px;text-decoration:underline;position:relative;top:14px;font-weight:bold;">SSR</span>
+                                        </a>
+                                        
+                                     </div>
+                                </td>
+                                <td style="width:5px;">
+                                
+                                </td>
+                            </tr>
+                            <tr style="height:25px;">
+                                <td colspan="5" style="text-align:center;">
+                                    <div style="width:175px;background-color:#c75900;border-radius:10px;height:20px;position:relative;left:1px;">
+                                         
+                                        
+                                        
+                                        <a href="https://theheritage.ac.in/LoginStudent.aspx" target="_blank" style="text-decoration:none;color:White;font-family:Arial;font-size:14px;font-weight:bolder;letter-spacing:1;position:relative;top:1px;">Online Fees Payment</a> 
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                    <td style="width:160px;" align="left">
+                        <table border="0" cellpadding="0" cellspacing="0" style="width:150px;border-left:2px solid #00346a;">
+                            <tr style="height:9px;">
+                                <td>
+                                
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;<a href="https://heritageit.almaconnect.com" target="_blank" style="text-decoration:none;"><img src="images/AlumniPortal.png" /><img src="images/graphics-new-buttons-495545.gif" height="15" width="28" /></a>
+                                </td>
+                                <td style="text-align:right;">
+                                    
+                                    <a href="https://www.facebook.com/Heritageit" target="_blank" style="text-decoration:none;"><img src="images/FB4.png" style="width:20px;height:20px;" alt="facebook" /></a>
+                                </td>
+                            </tr>
+                            <tr style="height:10px;">
+                                <td colspan="2">
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align:center;">
+                                    <div id="txtblnk">
+                                        
+                                        &nbsp;&nbsp;&nbsp;<a href="javaScript: void(0);" onclick="javascript:window.open('https://www.heritage.ac.in/HGIEnquiry.aspx','Enquiry','width=470,height=950')" target="_top" style="text-decoration:none;"><span id="ctl00_Label9" style="font-family:Arial;font-size:14px;text-decoration:none;font-weight:bold;color:Black;letter-spacing:1px;">Online Admission<br />  Enquiry 26-27</span></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="height:9px;">
+                                <td>
+                                
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    <div id="headerbg2">
+        <div id="container2">
+            <table style="width:1006px;height:40px;white-space:nowrap;position:relative;left:4px;z-index:9999999;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="color:White;text-align:left;vertical-align:middle;">
+                            
+                            <ul id="menu">
+                               <li><a href='#'><span>&nbsp;&nbsp;&nbsp;About HIT&nbsp;&nbsp;&nbsp;</span></a>
+                                   <ul>
+                                     <li><a href="Overview.aspx"><span>Overview</span></a></li>
+                                     <li><a href="Message.aspx"><span>Message</span></a></li>
+                                     <li><a href="VisionAndMission.aspx"><span>Vision & Mission</span></a></li>
+                                     <li><a href="QualityPolicy.aspx"><span>Quality Policy</span></a></li>
+                                     <li><a href="CoreValues.aspx"><span>Core Values</span></a></li>
+                                     <li><a href='BOT.aspx'><span>Board of Trustees</span></a></li>
+                                     <li><a href='BOG.aspx'><span>Board of Governors</span></a></li>
+                                     <li><a href='AdvisoryCouncil.aspx'><span>Advisory Council</span></a></li>
+                                     <li><a href='MgmtStaff.aspx'><span>Management & Staff</span></a></li>
+                                     <li><a href="AccreditationRecognition.aspx"><span>Recognition /Accred. /Affiliation</span></a></li>
+                                     <li><a href="InternationalCollaboration.aspx"><span>International Collaboration</span></a></li>
+                                     <li><a href="OurNeighbourhood.aspx"><span>Our Neighbourhood</span></a></li>
+                                     <li><a href='AwardsAchievements.aspx'><span>Awards & Achievements</span></a></li>
+                                  </ul>
+                               </li>
+                               <li><a href='#'><span>&nbsp;&nbsp;Academics&nbsp;&nbsp;</span></a>
+                                  <ul>
+                                     <li><a href='#'><span>Degree Awarding Departments</span></a>
+                                        <ul>
+                                           <li><a href='AEIE.aspx'><span>Appl. Elect. & Instru. Engg.(AEIE)</span></a></li>
+                                           <li class='last'><a href='BT.aspx'><span>Biotechnology (BT)</span></a></li>
+                                           <li class='last'><a href='ChemEngg.aspx'><span>Chemical Engineering (ChE)</span></a></li>
+                                           <li class='last'><a href='CE.aspx'><span>Civil Engineering (CE)</span></a></li>
+                                           <li class='last'><a href='CSE.aspx'><span>Computer Science & Engg.(CSE)</span></a></li>
+                                           <li class='last'><a href='CSBS.aspx'><span>Computer Sc. & Business Sys. (CSBS)</span></a></li>
+                                           <li class='last'><a href='CSE_AIML.aspx'><span>Computer Science & Engg. (AI & ML)</span></a></li>
+                                           <li class='last'><a href='CSE_DSc.aspx'><span>Computer Science & Engg. (Data Sc.)</span></a></li>
+                                           <li class='last'><a href='CSE_IoTCS.aspx'><span>Computer Science & Engg. (IoTCS)</span></a></li>
+                                           <li class='last'><a href='EE.aspx'><span>Electrical Engineering (EE)</span></a></li>
+                                           <li class='last'><a href='ECE.aspx'><span>Electronics & Comm. Engg. (ECE)</span></a></li>
+                                           <li class='last'><a href='IT.aspx'><span>Information Technology (IT)</span></a></li>                                           
+                                           <li class='last'><a href='ME.aspx'><span>Mechanical Engineering (ME)</span></a></li>
+                                           <li class='last'><a href='MCA1.aspx'><span>Computer Applications (MCA)</span></a></li>
+                                           <li class='last'><a href='BDES.aspx'><span>Bachelor of Design (B.DES)</span></a></li>
+                                             <li class='last'><a href='https://tha.edu.in/courses/bachelor-of-business-administration-bba/' target="_blank"><span>Bachelor of Business Administration</span></a></li>
+                                             <li class='last'><a href='https://tha.edu.in/courses/bachelor-of-computer-applications-bca/' target="_blank"><span>Bachelor of Computer Applications</span></a></li>
+                                             <li class='last'><a href='https://www.hbs.edu.in/index.php'  target="_blank"><span>Master of Business Administration</span></a></li>
+                                        </ul>
+                                     </li>
+                                     <li><a href='#'><span>Other Departments</span></a>
+                                        <ul>
+                                           <li><a href='Chemistry.aspx'><span>Chemistry</span></a></li>
+                                           <li class='last'><a href='Humanities.aspx'><span>Humanities</span></a></li>
+                                           <li class='last'><a href='Mathematics.aspx'><span>Mathematics</span></a></li>
+                                           <li class='last'><a href='Physics.aspx'><span>Physics</span></a></li>
+                                        </ul>
+                                     </li>
+                                     <li><a href='Programmes.aspx'><span>Programmes</span></a></li>
+                                     <li><a href='DeptsOfferingAcademicProgramms.aspx'><span>Depts. offering Academic Programs</span></a></li>
+                                     <li><a href='AcademicCouncil.aspx'><span>Academic Council - Minutes</span></a></li>
+                                  </ul>
+                               </li>
+                               <li><a href='#'><span>&nbsp;Admission&nbsp;</span></a>
+                                  <ul>
+                                     <li><a href="BTech.aspx"><span>B.Tech</span></a></li>
+                                     <li><a href="MTech.aspx"><span>M.Tech</span></a></li>
+                                     <li><a href="MCA.aspx"><span>MCA</span></a></li>
+                                  </ul>
+                               </li>
+                               <li><a href='#'><span>&nbsp;Infrastructure&nbsp;</span></a>
+                                  <ul>
+                                     <li><a href="Facilities.aspx"><span>Facilities</span></a></li>
+                                     <li><a href="Campus.aspx"><span>Campus</span></a></li>
+                                     <li><a href="Hostel.aspx"><span>Hostel</span></a></li>
+                                     <li><a href="SportsFacilities.aspx"><span>Sports Facilities</span></a></li>
+                                     <li><a href="ComputerCentre.aspx"><span>Computer Centre</span></a></li>
+                                  </ul>
+                               </li>
+                               <li><a href='#'><span>Beyond Academics</span></a>
+                                  <ul>
+                                     <li><a href="WorkshopSeminar.aspx"><span>Workshops & Seminars</span></a></li>
+                                     
+                                     
+                                     <li><a href="MentoringAndCounselling.aspx"><span>Mentoring & Counselling</span></a></li>
+                                     <li><a href="IndustrialVisits.aspx"><span>Industry Visits</span></a></li>
+                                     <li><a href="EDC.aspx"><span>Entrepreneurship Development Cell</span></a></li>
+                                     <li><a href="StudentsActivities.aspx"><span>Students' Activities</span></a></li>
+                                     <li><a href="hitkincub.aspx" target="_blank"><span>Pre-Incubation Centre</span></a></li>
+                                     
+                                  </ul>
+                               </li>
+                               <li><a href='#'><span>Training & Placement</span></a>
+                                  <ul>
+                                     <li><a href="Recruitment.aspx"><span>Recruitments</span></a></li>
+                                     <li><a href="SummerTraining.aspx"><span>Summer Training</span></a></li>
+                                     <li><a href="SoftSkill.aspx"><span>Soft Skill & Other Training</span></a></li>
+                                     <li><a href="TPOffice.aspx"><span>Training & Placement Office</span></a></li>
+                                     <li><a href="PDF/Life_Skills_Course_2021.pdf" target="_blank" style="text-decoration:none;color:White;"><span>Life Skills</span></a></li>
+                                  </ul>
+                               </li>
+                               <li><a href='Library.aspx' target="_blank"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Library&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a> 
+                                  
+                               </li>
+                            </ul>
+                            
+
+
+
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+     <div id="topRight8" >     
+
+        <a href="routines.aspx" target="_parent" style="text-decoration:none;color:White;">
+        <span id="ctl00_Label3" style="font-family:Arial;font-size:11px;font-weight:bold;position:relative;top:3px;">Class Routines</span></a>
+    </div>
+    <div id="topRight4">    
+        <a href="OnlineFacilities.aspx" style="text-decoration:none;font-size:11px;color:Black;" target="_parent">Online Facilities<br />For Students
+            
+        </a>
+    </div>
+    <div id="topRight1">
+        <div id="txtblnk3">
+            <a href="http://136.232.2.201:8084/stud26OR.aspx" target="_blank" style="text-decoration:none;color:Black;">                
+                <span id="ctl00_Label5" style="font-family:Arial;font-size:11px;font-weight:bold;position:relative;top:-5px;left:-4px;">PPR Result</span><br />
+                <span id="ctl00_Label7" style="font-family:Arial;font-size:11px;font-weight:bold;position:relative;top:-7px;">B.Tech (1st & 3rd </span><br />
+                <span id="ctl00_Label6" style="font-family:Arial;font-size:11px;font-weight:bold;position:relative;top:-9px;">Sem), M.Tech & </span><br />            
+                <span id="ctl00_Label8" style="font-family:Arial;font-size:11px;font-weight:bold;position:relative;top:-9px;">MCA (1st Sem)</span>                
+            </a>
+        </div>
+    </div>
+   
+        
+  
+    <div>
+        
+
+
+    <table style="width:1010px;height:auto;margin-bottom:0px;white-space:nowrap;padding:0px;position:relative;left:5px;" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tr style="height:20px;">
+            <td>
+                <a href="index.aspx"  style="font-family:Arial;font-size:12px;font-weight:bold;text-decoration:none;color:Black;"><span id="ctl00_ContentPlaceHolder1_Label1">Home</span></a>
+                <img src="imagesHITK/bullet_red.gif" alt="bullet" /><a href="routines.aspx" style="font-family:Arial;font-size:12px;font-weight:bold;text-decoration:none;color:Black;"><span id="ctl00_ContentPlaceHolder1_Label2">Class Routines</span></a>
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td style="height:auto;width:690px" valign="top" rowspan="4">
+            <form name="aspnetForm" method="post" action="./routines.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTUxMTMwMDc1OA9kFgJmD2QWAgITD2QWAgIFD2QWBAIDDzwrABEDAA8WBB4LXyFEYXRhQm91bmRnHgtfIUl0ZW1Db3VudAJEZAEQFgAWABYADBQrAAAWAmYPZBaKAQIBD2QWBmYPZBYCAgEPDxYCHgRUZXh0BQQyODIzZGQCAQ9kFgICAQ8PFgIfAgU5PEI+TUNBIDFzdCBZZWFyIDJuZCBTZW0gUm91dGluZXMgdy5lLmYuIDA1LjAzLjIwMjYNCgo8L2I+ZGQCAg9kFgRmDxUBBUxhYmVsZAIBDw8WAh4HVmlzaWJsZWhkZAICD2QWBmYPZBYCAgEPDxYCHwIFBDI4MjJkZAIBD2QWAgIBDw8WAh8CBRxNQ0EgMXN0IFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMVIwejcwaXhSY25LSnRuZWVlTW92LXVsZTdtWTZ5VUxhL3ZpZXc/dXNwPXNoYXJpbmdkAgMPZBYGZg9kFgICAQ8PFgIfAgUEMjgyMWRkAgEPZBYCAgEPDxYCHwIFBiZuYnNwO2RkAgIPZBYEZg8VAQVMYWJlbGQCAQ8PFgIfA2hkZAIED2QWBmYPZBYCAgEPDxYCHwIFBDI4MjBkZAIBD2QWAgIBDw8WAh8CBTw8Qj5NLiBUZWNoIDFzdCBZZWFyIDJuZCBTZW0gUm91dGluZXMgdy5lLmYuIDA1LjAzLjIwMjYNCjwvYj5kZAICD2QWBGYPFQEFTGFiZWxkAgEPDxYCHwNoZGQCBQ9kFgZmD2QWAgIBDw8WAh8CBQQyODE5ZGQCAQ9kFgICAQ8PFgIfAgUkTS5UZWNoIEFFSUUgMXN0IFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMTZmNEhMZmg0S0VyVHNFOUl1UWY2UWl4MGNmcWdDZEVlL3ZpZXc/dXNwPXNoYXJpbmdkAgYPZBYGZg9kFgICAQ8PFgIfAgUEMjgxOGRkAgEPZBYCAgEPDxYCHwIFI00uVGVjaCBFQ0UgMXN0IFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMUVFWGNPbUtKN3lSWHo4WHVjSXhPc2pJN01JU3hKM0JRL3ZpZXc/dXNwPXNoYXJpbmdkAgcPZBYGZg9kFgICAQ8PFgIfAgUEMjgxN2RkAgEPZBYCAgEPDxYCHwIFIk0uVGVjaCBCVCAxc3QgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xSDFSY2NhbHNkNldjYndlbXdaQTlfaDJhRVRXLXhyM3kvdmlldz91c3A9c2hhcmluZ2QCCA9kFgZmD2QWAgIBDw8WAh8CBQQyODE2ZGQCAQ9kFgICAQ8PFgIfAgUkTS5UZWNoIFZMU0kgMXN0IFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMWx4dERMNVZaNlJFUlJPYnNvMGpoa2JCU0tObWJMWHh0L3ZpZXc/dXNwPXNoYXJpbmdkAgkPZBYGZg9kFgICAQ8PFgIfAgUEMjgxNWRkAgEPZBYCAgEPDxYCHwIFK00uVGVjaCBDU0UgMXN0IFllYXIgMm5kIFNlbSBSb3V0aW5lIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xclA1WGJYeDlHeFNuRjk5LXVxTmI5T1QzVEJwZGlfa18vdmlldz91c3A9c2hhcmluZ2QCCg9kFgZmD2QWAgIBDw8WAh8CBQQyODE0ZGQCAQ9kFgICAQ8PFgIfAgUGJm5ic3A7ZGQCAg9kFgRmDxUBBUxhYmVsZAIBDw8WAh8DaGRkAgsPZBYGZg9kFgICAQ8PFgIfAgUEMjgxM2RkAgEPZBYCAgEPDxYCHwIFOzxCPkIuIFRlY2ggMm5kIFllYXIgMm5kIFNlbSBSb3V0aW5lcyB3LmUuZi4gMDUuMDMuMjAyNgo8L2I+ZGQCAg9kFgRmDxUBBUxhYmVsZAIBDw8WAh8DaGRkAgwPZBYGZg9kFgICAQ8PFgIfAgUEMjgxMmRkAgEPZBYCAgEPDxYCHwIFJEIuVGVjaCBBRUlFIDJuZCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFNZUU5STVCNUFwemJSeFVlcF9VY2RhU196alpUaHc2Ry92aWV3P3VzcD1zaGFyaW5nZAIND2QWBmYPZBYCAgEPDxYCHwIFBDI4MTFkZAIBD2QWAgIBDw8WAh8CBSNCLlRlY2ggQ0hFIDJuZCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFpM29Ycm8yYy01eVVwd2JnNFdQTnQ1djBFOW1oZXIxMC92aWV3P3VzcD1zaGFyaW5nZAIOD2QWBmYPZBYCAgEPDxYCHwIFBDI4MTBkZAIBD2QWAgIBDw8WAh8CBSJCLlRlY2ggQlQgMm5kIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMXdpRmt2ZENtTDY2cmVsMlZqSzBWbDVhTjZwN1h6c3BpL3ZpZXc/dXNwPXNoYXJpbmdkAg8PZBYGZg9kFgICAQ8PFgIfAgUEMjgwOWRkAgEPZBYCAgEPDxYCHwIFIkIuVGVjaCBDRSAybmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xRWxHeVFNTE1sZ01TUEc1SWJiVHNSYW5zWlhpWl9tUTkvdmlldz91c3A9c2hhcmluZ2QCEA9kFgZmD2QWAgIBDw8WAh8CBQQyODA4ZGQCAQ9kFgICAQ8PFgIfAgUkQi5UZWNoIENTQlMgMm5kIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMUNWUVlVLVVtZ0pjNERXVjQzTkxzcUpQVVlMQWJScjM4L3ZpZXc/dXNwPXNoYXJpbmdkAhEPZBYGZg9kFgICAQ8PFgIfAgUEMjgwN2RkAgEPZBYCAgEPDxYCHwIFKUIuVGVjaCBDU0UoQUlNTCkgMm5kIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMUtHX2x1bmhITVhINmVhdC1OQjNZQ001Tjl6ZGQ0TExIL3ZpZXc/dXNwPXNoYXJpbmdkAhIPZBYGZg9kFgICAQ8PFgIfAgUEMjgwNmRkAgEPZBYCAgEPDxYCHwIFKkIuVGVjaCBDU0UoSW9UQ1MpIDJuZCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzF2V0kwd29HX2xhMjhfUlc5dGZhYVlPQVBkZ1RuY3RFVi92aWV3P3VzcD1zaGFyaW5nZAITD2QWBmYPZBYCAgEPDxYCHwIFBDI4MDVkZAIBD2QWAgIBDw8WAh8CBSJCLlRlY2ggRUUgMm5kIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMUgzZnl1WDNIVURLRWJjNi1DZk9zY1pnWF9OMFRqRld2L3ZpZXc/dXNwPXNoYXJpbmdkAhQPZBYGZg9kFgICAQ8PFgIfAgUEMjgwNGRkAgEPZBYCAgEPDxYCHwIFIkIuVGVjaCBJVCAybmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xamZHTE9pLU9iQ3h5LVNoVXIzT1BKbzVpd0RrTDdIVlYvdmlldz91c3A9c2hhcmluZ2QCFQ9kFgZmD2QWAgIBDw8WAh8CBQQyODAzZGQCAQ9kFgICAQ8PFgIfAgUjQi5UZWNoIEVDRSAybmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xS1lacGtZNjljSHllaE5KaXFZZ01HV0ZzazAzU3dxTEcvdmlldz91c3A9c2hhcmluZ2QCFg9kFgZmD2QWAgIBDw8WAh8CBQQyODAyZGQCAQ9kFgICAQ8PFgIfAgUiQi5UZWNoIE1FIDJuZCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFaRkZzeG9rRE1LenptQUVjTkdwQXlfTHNDc2N1LVJlNS92aWV3P3VzcD1zaGFyaW5nZAIXD2QWBmYPZBYCAgEPDxYCHwIFBDI4MDFkZAIBD2QWAgIBDw8WAh8CBSdCLlRlY2ggQ1NFKERTKSAybmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xeU1JdGRjMXBhNjdlM1FSQ0c5Zm5NcThZRTFnRjNNbUQvdmlldz91c3A9c2hhcmluZ2QCGA9kFgZmD2QWAgIBDw8WAh8CBQQyODAwZGQCAQ9kFgICAQ8PFgIfAgUrQi5UZWNoIENTRSAybmQgWWVhciAybmQgU2VtIFJvdXRpbmUgMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFoQ3Y0UTNkQVRSUUFzaG1kMmVrQkJ6SmVtVmRTdHkzbC92aWV3P3VzcD1zaGFyaW5nZAIZD2QWBmYPZBYCAgEPDxYCHwIFBDI3OTlkZAIBD2QWAgIBDw8WAh8CBQYmbmJzcDtkZAICD2QWBGYPFQEFTGFiZWxkAgEPDxYCHwNoZGQCGg9kFgZmD2QWAgIBDw8WAh8CBQQyNzk4ZGQCAQ9kFgICAQ8PFgIfAgU7PEI+Qi4gVGVjaCAxc3QgWWVhciAybmQgU2VtIFJvdXRpbmVzIHcuZS5mLiAwNS4wMy4yMDI2CjwvYj5kZAICD2QWBGYPFQEFTGFiZWxkAgEPDxYCHwNoZGQCGw9kFgZmD2QWAgIBDw8WAh8CBQQyNzk3ZGQCAQ9kFgICAQ8PFgIfAgUkQi5UZWNoIEFFSUUgMXN0IFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMW5iczdTYm83WnhQR0pRNnJLcFQtNnh2eG80VHVoMWgtL3ZpZXc/dXNwPXNoYXJpbmdkAhwPZBYGZg9kFgICAQ8PFgIfAgUEMjc5NmRkAgEPZBYCAgEPDxYCHwIFI0IuVGVjaCBDSEUgMXN0IFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMWJJMnNCdjhLOVJhczdPU3FRcXFudUtxWThhbWF1NXBSL3ZpZXc/dXNwPXNoYXJpbmdkAh0PZBYGZg9kFgICAQ8PFgIfAgUEMjc5NWRkAgEPZBYCAgEPDxYCHwIFIkIuVGVjaCBCVCAxc3QgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xd0FLeldSYzh3M2lsOGRoU2lsMExndEZuRkNLLXZ2YTAvdmlldz91c3A9c2hhcmluZ2QCHg9kFgZmD2QWAgIBDw8WAh8CBQQyNzk0ZGQCAQ9kFgICAQ8PFgIfAgUiQi5UZWNoIENFIDFzdCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFxRjNFSENfUGpZMmduZzZudmtScWxaZUdETkdpaXpvQS92aWV3P3VzcD1zaGFyaW5nZAIfD2QWBmYPZBYCAgEPDxYCHwIFBDI3OTNkZAIBD2QWAgIBDw8WAh8CBSRCLlRlY2ggQ1NCUyAxc3QgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xMDR1M1BJSWVIZHlINS1velJzaUNtVDR6NDBhM2xFcEQvdmlldz91c3A9c2hhcmluZ2QCIA9kFgZmD2QWAgIBDw8WAh8CBQQyNzkyZGQCAQ9kFgICAQ8PFgIfAgUpQi5UZWNoIENTRShBSU1MKSAxc3QgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xeFBkYm9lTUFoX0dqQ3VQRXdBeHhERWJPQi1nVllzTXQvdmlldz91c3A9c2hhcmluZ2QCIQ9kFgZmD2QWAgIBDw8WAh8CBQQyNzkxZGQCAQ9kFgICAQ8PFgIfAgUnQi5UZWNoIENTRShEUykgMXN0IFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMUZOam92R0U1MmdnZUhtN2hrRVBhbjJ3RHVSa2FiYkR3L3ZpZXc/dXNwPXNoYXJpbmdkAiIPZBYGZg9kFgICAQ8PFgIfAgUEMjc5MGRkAgEPZBYCAgEPDxYCHwIFKkIuVGVjaCBDU0UoSW9UQ1MpIDFzdCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFodHg3STR3XzE2eTJ5QS1PdG04YVQxNnFWR2g1eF84QS92aWV3P3VzcD1zaGFyaW5nZAIjD2QWBmYPZBYCAgEPDxYCHwIFBDI3ODlkZAIBD2QWAgIBDw8WAh8CBSJCLlRlY2ggRUUgMXN0IFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMXBPVThza2FVbGRnS3h5TG5ZUkw0aWltMklwMkxGaDNNL3ZpZXc/dXNwPXNoYXJpbmdkAiQPZBYGZg9kFgICAQ8PFgIfAgUEMjc4OGRkAgEPZBYCAgEPDxYCHwIFIkIuVGVjaCBJVCAxc3QgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xQ0xyMy04N181Z1JaRzF3dWhkaHBDV0lWZkdrYkxObHYvdmlldz91c3A9c2hhcmluZ2QCJQ9kFgZmD2QWAgIBDw8WAh8CBQQyNzg3ZGQCAQ9kFgICAQ8PFgIfAgUjQi5UZWNoIEVDRSAxc3QgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xcGVWaHFMNkxSTGJpX0VqRUxpRUxJR2dfaTlnRTRIeEMvdmlldz91c3A9c2hhcmluZ2QCJg9kFgZmD2QWAgIBDw8WAh8CBQQyNzg2ZGQCAQ9kFgICAQ8PFgIfAgUiQi5UZWNoIE1FIDFzdCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzExV2NoUzM4QUxNLTEzdHR6ams1U2J2d3hQYXgxMU1INC92aWV3P3VzcD1zaGFyaW5nZAInD2QWBmYPZBYCAgEPDxYCHwIFBDI3ODVkZAIBD2QWAgIBDw8WAh8CBStCLlRlY2ggQ1NFIDFzdCBZZWFyIDJuZCBTZW0gUm91dGluZSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMXhvSjZFVkZ1NFN3cFFwZlRNV180QThvczBIeWxvZ3VwL3ZpZXc/dXNwPXNoYXJpbmdkAigPZBYGZg9kFgICAQ8PFgIfAgUEMjc4NGRkAgEPZBYCAgEPDxYCHwIFBiZuYnNwO2RkAgIPZBYEZg8VAQVMYWJlbGQCAQ8PFgIfA2hkZAIpD2QWBmYPZBYCAgEPDxYCHwIFBDI3ODNkZAIBD2QWAgIBDw8WAh8CBTE8Qj5CLiBUZWNoIDR0aCBZZWFyIDJuZCBTZW0gcm91dGluZXNfMjAyNS0yNgo8L2I+ZGQCAg9kFgRmDxUBBUxhYmVsZAIBDw8WAh8DaGRkAioPZBYGZg9kFgICAQ8PFgIfAgUEMjc4MmRkAgEPZBYCAgEPDxYCHwIFIkIuVGVjaCBDRSA0dGggWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xeG42aVp5SVU5OGtxTV9FT19scDBucmxnckxTVndHdGgvdmlldz91c3A9c2hhcmluZ2QCKw9kFgZmD2QWAgIBDw8WAh8CBQQyNzgxZGQCAQ9kFgICAQ8PFgIfAgUjQi5UZWNoIENIRSA0dGggWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xTWl1cHVjTnpfME1Rb2Vkc180Rm15SkJTQUFMdUtHeGUvdmlldz91c3A9c2hhcmluZ2QCLA9kFgZmD2QWAgIBDw8WAh8CBQQyNzgwZGQCAQ9kFgICAQ8PFgIfAgUkQi5UZWNoIEFFSUUgNHRoIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMThIelJzYU9hOGYzVzdaTjFic3VOQ2NxeldpRGE1V3ZtL3ZpZXc/dXNwPXNoYXJpbmdkAi0PZBYGZg9kFgICAQ8PFgIfAgUEMjc3OWRkAgEPZBYCAgEPDxYCHwIFI0IuVGVjaCBDU0UgNHRoIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMWFocVFkVGJGbnRpZldTa01wQ0dlbFRIY0ktdWpEd2VyL3ZpZXc/dXNwPXNoYXJpbmdkAi4PZBYGZg9kFgICAQ8PFgIfAgUEMjc3OGRkAgEPZBYCAgEPDxYCHwIFJEIuVGVjaCBDU0JTIDR0aCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzE3aUZnRkxqRmYzUnRZbElmVkpLclpmVDdxT21uN2M2NS92aWV3P3VzcD1zaGFyaW5nZAIvD2QWBmYPZBYCAgEPDxYCHwIFBDI3NzdkZAIBD2QWAgIBDw8WAh8CBSlCLlRlY2ggQ1NFKEFJTUwpIDR0aCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzF0eEliclUwVlhmeDhqR3Ezbk0tbk5sa0h1UHNFcWpISi92aWV3P3VzcD1zaGFyaW5nZAIwD2QWBmYPZBYCAgEPDxYCHwIFBDI3NzZkZAIBD2QWAgIBDw8WAh8CBSdCLlRlY2ggQ1NFKERTKSA0dGggWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xeTBVZ0E2eGNQNzJaVURYUmZLV3ZmQjIxU3F2cGwwTHIvdmlldz91c3A9c2hhcmluZ2QCMQ9kFgZmD2QWAgIBDw8WAh8CBQQyNzc1ZGQCAQ9kFgICAQ8PFgIfAgUqQi5UZWNoIENTRShJb1RDUykgNHRoIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMUstNHA5c0hiLWpUaVFsMWItUmJ3LTUwY1l2LUpJVUR5L3ZpZXc/dXNwPXNoYXJpbmdkAjIPZBYGZg9kFgICAQ8PFgIfAgUEMjc3NGRkAgEPZBYCAgEPDxYCHwIFIkIuVGVjaCBFRSA0dGggWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xUXY4Q18zS25MUEtaeFFGWUhZelZfcGEwVVNyNkFmQksvdmlldz91c3A9c2hhcmluZ2QCMw9kFgZmD2QWAgIBDw8WAh8CBQQyNzczZGQCAQ9kFgICAQ8PFgIfAgUiQi5UZWNoIElUIDR0aCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFoZGRXVDBMQ1R4bkFIRXZBNEhGLWotbzdpYjZLX3Bqci92aWV3P3VzcD1zaGFyaW5nZAI0D2QWBmYPZBYCAgEPDxYCHwIFBDI3NzJkZAIBD2QWAgIBDw8WAh8CBSJCLlRlY2ggTUUgNHRoIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMWR4X3kxeTdHZHhRNkVvN1dhTnpick9pZ2ZBdGEwV005L3ZpZXc/dXNwPXNoYXJpbmdkAjUPZBYGZg9kFgICAQ8PFgIfAgUEMjc3MWRkAgEPZBYCAgEPDxYCHwIFI0IuVGVjaCBFQ0UgNHRoIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMXZTamxmNko2R0wwTnhLdmwydE1ST21LeWhyM0VGbTB3L3ZpZXc/dXNwPXNoYXJpbmdkAjYPZBYGZg9kFgICAQ8PFgIfAgUEMjc3MGRkAgEPZBYCAgEPDxYCHwIFBiZuYnNwO2RkAgIPZBYEZg8VAQVMYWJlbGQCAQ8PFgIfA2hkZAI3D2QWBmYPZBYCAgEPDxYCHwIFBDI3NjlkZAIBD2QWAgIBDw8WAh8CBQYmbmJzcDtkZAICD2QWBGYPFQEFTGFiZWxkAgEPDxYCHwNoZGQCOA9kFgZmD2QWAgIBDw8WAh8CBQQyNzY4ZGQCAQ9kFgICAQ8PFgIfAgUyPEI+Qi4gVGVjaCAzcmQgWWVhciAybmQgU2VtIHJvdXRpbmVzXzIwMjUtMjYNCjwvYj5kZAICD2QWBGYPFQEFTGFiZWxkAgEPDxYCHwNoZGQCOQ9kFgZmD2QWAgIBDw8WAh8CBQQyNzY3ZGQCAQ9kFgICAQ8PFgIfAgUkQi5UZWNoIEFFSUUgM3JkIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMWVWMGtDbXZZTlVsOEVTQTQxaXI1TFJRU1JHcFk4Ql93L3ZpZXc/dXNwPXNoYXJpbmdkAjoPZBYGZg9kFgICAQ8PFgIfAgUEMjc2NmRkAgEPZBYCAgEPDxYCHwIFIkIuVGVjaCBDRSAzcmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xaFo1b0hpVXFHdU9obW42andjOVlPUG5mQzFZYk9qalIvdmlldz91c3A9c2hhcmluZ2QCOw9kFgZmD2QWAgIBDw8WAh8CBQQyNzY1ZGQCAQ9kFgICAQ8PFgIfAgUjQi5UZWNoIENTRSAzcmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xWmNVenpJNU9wdkJsMjRnRzNVRUE5bVlYaXZMZE0wMlgvdmlldz91c3A9c2hhcmluZ2QCPA9kFgZmD2QWAgIBDw8WAh8CBQQyNzY0ZGQCAQ9kFgICAQ8PFgIfAgUjQi5UZWNoIENIRSAzcmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xTWExUjdlUm1za2JQNFlwYUtLeTJvT3VfcjVZNFU3bU0vdmlldz91c3A9c2hhcmluZ2QCPQ9kFgZmD2QWAgIBDw8WAh8CBQQyNzYzZGQCAQ9kFgICAQ8PFgIfAgUkQi5UZWNoIENTQlMgM3JkIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMUZRSThLeEY3eGU0a3AyR2lUVjViblBmY2ZpYkRrdEQtL3ZpZXc/dXNwPXNoYXJpbmdkAj4PZBYGZg9kFgICAQ8PFgIfAgUEMjc2MmRkAgEPZBYCAgEPDxYCHwIFKUIuVGVjaCBDU0UoQUlNTCkgM3JkIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMXpBaVNfWnlRSWotUzBZenRsb1lPM25fb0l6NE9TUXdnL3ZpZXc/dXNwPXNoYXJpbmdkAj8PZBYGZg9kFgICAQ8PFgIfAgUEMjc2MWRkAgEPZBYCAgEPDxYCHwIFKkIuVGVjaCBDU0UoSW9UQ1MpIDNyZCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFkT3IzdFVKOThfWjJyalpLM1Zxa0RIMWFhMm9Da1hPVy92aWV3P3VzcD1zaGFyaW5nZAJAD2QWBmYPZBYCAgEPDxYCHwIFBDI3NjBkZAIBD2QWAgIBDw8WAh8CBSdCLlRlY2ggQ1NFKERTKSAzcmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xczhfOU1pSzBtMjZvRE5fWWFtRDd3d0VwcWw4NlExdnMvdmlldz91c3A9c2hhcmluZ2QCQQ9kFgZmD2QWAgIBDw8WAh8CBQQyNzU5ZGQCAQ9kFgICAQ8PFgIfAgUiQi5UZWNoIElUIDNyZCBZZWFyIDJuZCBTZW0gMjAyNS0yNmRkAgIPZBYCZg8VAVJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFad1dLWHlHY3lkTUI5VU5lbnFFZWVGSzRfUFZseHpZdi92aWV3P3VzcD1zaGFyaW5nZAJCD2QWBmYPZBYCAgEPDxYCHwIFBDI3NThkZAIBD2QWAgIBDw8WAh8CBSJCLlRlY2ggRUUgM3JkIFllYXIgMm5kIFNlbSAyMDI1LTI2ZGQCAg9kFgJmDxUBUmh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMVZ5ZDlfdTV0aC1PWmN1Q1pqM2FhTk11aW12eGpWUGpSL3ZpZXc/dXNwPXNoYXJpbmdkAkMPZBYGZg9kFgICAQ8PFgIfAgUEMjc1N2RkAgEPZBYCAgEPDxYCHwIFIkIuVGVjaCBNRSAzcmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xWEhpSDJOSVNHa3U2NHEyTXVYU0VOSFpvZXdRYXhXTVYvdmlldz91c3A9c2hhcmluZ2QCRA9kFgZmD2QWAgIBDw8WAh8CBQQyNzU2ZGQCAQ9kFgICAQ8PFgIfAgUjQi5UZWNoIEVDRSAzcmQgWWVhciAybmQgU2VtIDIwMjUtMjZkZAICD2QWAmYPFQFSaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xc0RMQm5FSDBrUzhZNnRKUWt5S1N6Y0JLNTEyOGppVVgvdmlldz91c3A9c2hhcmluZ2QCRQ8PFgIfA2hkZAIFDzwrABEDAA8WBB8AZx8BZmQBEBYAFgAWAAwUKwAAZBgCBSNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJEdyaWRWaWV3MQ88KwAMAQhmZAUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRHcmlkVmlldzIPPCsADAEIAgFkUVYnbHUvLPLGgBN2m+I+gO3dV7eMLww2Sjqo5xYq1Uw=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9748819C" />
+</div>
+                &nbsp;&nbsp;
+                <span id="ctl00_ContentPlaceHolder1_Label20" style="font-family:Arial;font-size:14px;color:White;font-weight:bold;">Class Routines</span><br />
+                <div>
+	<table cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_GridView2" style="width:680px;border-collapse:collapse;">
+		<tr>
+			<th align="left" scope="col" style="color:White;background-color:#4473A3;font-family:Arial;font-size:Medium;">  Class Routines</th><th scope="col" style="color:White;background-color:#4473A3;font-family:Arial;font-size:X-Small;">Publish Date</th>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl02_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;"><B>MCA 1st Year 2nd Sem Routines w.e.f. 05.03.2026
+
+</b></span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl03_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">MCA 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1R0z70ixRcnKJtneeeMov-ule7mY6yULa/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl03_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl04_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">&nbsp;</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl05_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;"><B>M. Tech 1st Year 2nd Sem Routines w.e.f. 05.03.2026
+</b></span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl06_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">M.Tech AEIE 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/16f4HLfh4KErTsE9IuQf6Qix0cfqgCdEe/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl06_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl07_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">M.Tech ECE 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1EEXcOmKJ7yRXz8XucIxOsjI7MISxJ3BQ/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl07_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl08_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">M.Tech BT 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1H1Rccalsd6WcbwemwZA9_h2aETW-xr3y/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl08_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl09_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">M.Tech VLSI 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1lxtDL5VZ6RERRObso0jhkbBSKNmbLXxt/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl09_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl10_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">M.Tech CSE 1st Year 2nd Sem Routine 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1rP5XbXx9GxSnF99-uqNb9OT3TBpdi_k_/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl10_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl11_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">&nbsp;</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl12_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;"><B>B. Tech 2nd Year 2nd Sem Routines w.e.f. 05.03.2026
+</b></span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl13_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech AEIE 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1MeE9I5B5ApzbRxUep_UcdaS_zjZThw6G/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl13_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl14_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CHE 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1i3oXro2c-5yUpwbg4WPNt5v0E9mher10/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl14_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl15_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech BT 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1wiFkvdCmL66rel2VjK0Vl5aN6p7Xzspi/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl15_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl16_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CE 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1ElGyQMLMlgMSPG5IbbTsRansZXiZ_mQ9/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl16_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl17_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSBS 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1CVQYU-UmgJc4DWV43NLsqJPUYLAbRr38/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl17_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl18_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(AIML) 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1KG_lunhHMXH6eat-NB3YCM5N9zdd4LLH/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl18_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl19_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(IoTCS) 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1vWI0woG_la28_RW9tfaaYOAPdgTnctEV/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl19_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl20_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech EE 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1H3fyuX3HUDKEbc6-CfOscZgX_N0TjFWv/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl20_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl21_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech IT 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1jfGLOi-ObCxy-ShUr3OPJo5iwDkL7HVV/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl21_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl22_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech ECE 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1KYZpkY69cHyehNJiqYgMGWFsk03SwqLG/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl22_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl23_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech ME 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1ZFFsxokDMKzzmAEcNGpAy_LsCscu-Re5/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl23_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl24_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(DS) 2nd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1yMItdc1pa67e3QRCG9fnMq8YE1gF3MmD/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl24_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl25_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE 2nd Year 2nd Sem Routine 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1hCv4Q3dATRQAshmd2ekBBzJemVdSty3l/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl25_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl26_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">&nbsp;</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl27_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;"><B>B. Tech 1st Year 2nd Sem Routines w.e.f. 05.03.2026
+</b></span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl28_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech AEIE 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1nbs7Sbo7ZxPGJQ6rKpT-6xvxo4Tuh1h-/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl28_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl29_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CHE 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1bI2sBv8K9Ras7OSqQqqnuKqY8amau5pR/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl29_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl30_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech BT 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1wAKzWRc8w3il8dhSil0LgtFnFCK-vva0/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl30_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl31_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CE 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1qF3EHC_PjY2gng6nvkRqlZeGDNGiizoA/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl31_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl32_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSBS 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/104u3PIIeHdyH5-ozRsiCmT4z40a3lEpD/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl32_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl33_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(AIML) 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1xPdboeMAh_GjCuPEwAxxDEbOB-gVYsMt/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl33_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl34_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(DS) 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1FNjovGE52ggeHm7hkEPan2wDuRkabbDw/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl34_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl35_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(IoTCS) 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1htx7I4w_16y2yA-Otm8aT16qVGh5x_8A/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl35_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl36_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech EE 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1pOU8skaUldgKxyLnYRL4iim2Ip2LFh3M/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl36_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl37_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech IT 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1CLr3-87_5gRZG1wuhdhpCWIVfGkbLNlv/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl37_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl38_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech ECE 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1peVhqL6LRLbi_EjELiELIGg_i9gE4HxC/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl38_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl39_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech ME 1st Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/11WchS38ALM-13ttzjk5SbvwxPax11MH4/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl39_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl40_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE 1st Year 2nd Sem Routine 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1xoJ6EVFu4SwpQpfTMW_4A8os0Hylogup/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl40_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl41_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">&nbsp;</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl42_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;"><B>B. Tech 4th Year 2nd Sem routines_2025-26
+</b></span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl43_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CE 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1xn6iZyIU98kqM_EO_lp0nrlgrLSVwGth/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl43_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl44_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CHE 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1MiupucNz_0MQoeds_4FmyJBSAALuKGxe/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl44_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl45_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech AEIE 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/18HzRsaOa8f3W7ZN1bsuNCcqzWiDa5Wvm/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl45_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl46_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1ahqQdTbFntifWSkMpCGelTHcI-ujDwer/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl46_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl47_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSBS 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/17iFgFLjFf3RtYlIfVJKrZfT7qOmn7c65/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl47_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl48_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(AIML) 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1txIbrU0VXfx8jGq3nM-nNlkHuPsEqjHJ/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl48_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl49_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(DS) 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1y0UgA6xcP72ZUDXRfKWvfB21Sqvpl0Lr/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl49_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl50_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(IoTCS) 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1K-4p9sHb-jTiQl1b-Rbw-50cYv-JIUDy/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl50_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl51_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech EE 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1Qv8C_3KnLPKZxQFYHYzV_pa0USr6AfBK/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl51_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl52_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech IT 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1hddWT0LCTxnAHEvA4HF-j-o7ib6K_pjr/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl52_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl53_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech ME 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1dx_y1y7GdxQ6Eo7WaNzbrOigfAta0WM9/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl53_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl54_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech ECE 4th Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1vSjlf6J6GL0NxKvl2tMROmKyhr3EFm0w/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl54_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl55_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">&nbsp;</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl56_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">&nbsp;</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl57_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;"><B>B. Tech 3rd Year 2nd Sem routines_2025-26
+</b></span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='Label' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl58_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech AEIE 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1eV0kCmvYNUl8ESA41ir5LRQSRGpY8B_w/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl58_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl59_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CE 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1hZ5oHiUqGuOhmn6jwc9YOPnfC1YbOjjR/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl59_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl60_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1ZcUzzI5OpvBl24gG3UEA9mYXivLdM02X/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl60_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl61_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CHE 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1Ma1R7eRmskbP4YpaKKy2oOu_r5Y4U7mM/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl61_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl62_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSBS 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1FQI8KxF7xe4kp2GiTV5bnPfcfibDktD-/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl62_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl63_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(AIML) 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1zAiS_ZyQIj-S0YztloYO3n_oIz4OSQwg/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl63_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl64_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(IoTCS) 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1dOr3tUJ98_Z2rjZK3VqkDH1aa2oCkXOW/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl64_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl65_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech CSE(DS) 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1s8_9MiK0m26oDN_YamD7wwEpql86Q1vs/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl65_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl66_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech IT 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1ZwWKXyGcydMB9UNenqEeeFK4_PVlxzYv/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl66_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl67_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech EE 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1Vyd9_u5th-OZcuCZj3aaNMuimvxjVPjR/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl67_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr>
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl68_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech ME 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1XHiH2NISGku64q2MuXSENHZoewQaxWMV/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl68_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr><tr style="background-color:#FFF933;">
+			<td>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView2_ctl69_lblHeading" style="font-family:Arial;font-size:14px;text-align:justify;width:auto;">B.Tech ECE 3rd Year 2nd Sem 2025-26</span> &nbsp;&nbsp;-
+                                            
+                                    </td><td align="center">
+                                            &nbsp;&nbsp;<a href='https://drive.google.com/file/d/1sDLBnEH0kS8Y6tJQkyKSzcBK5128jiUX/view?usp=sharing' target="_blank" style="text-decoration:none;color:Black;font-family:Arial;font-size:14px;"><span id="ctl00_ContentPlaceHolder1_GridView2_ctl69_Label3" style="color:Black;font-family:Arial;font-size:14px;text-align:justify;width:auto;">Click here</span></a>
+                                            
+                                    </td>
+		</tr>
+	</table>
+</div>
+                <br /><br /><br />
+
+                <div>
+
+</div>
+
+                <br /><br />
+                
+                
+
+
+                </form>
+                
+
+                
+                 
+            </td>
+            <td style="width:320px;height:140px;" valign="top">
+                <table id="ctl00_ContentPlaceHolder1_table10" border="0" style="width:298px;height:500px;" cellpadding="0" cellspacing="0" align="right">
+	<tr>
+		<td style="height:30px;background-color:#217BC5;border-top:3px solid #010F1A;border-bottom:3px solid #010F1A;">
+                                    &nbsp;
+                                  <span id="ctl00_ContentPlaceHolder1_Label25" style="font-family:Arial;font-size:14px;color:White;font-weight:bold;">Degree Awarding Departments</span>
+                                </td>
+	</tr>
+	<tr>
+		<td style="height:250px;" valign="top">
+                            
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="AEIE.aspx" style="text-decoration:none;color:Black;" title="Applied Electronics & Instrumentation Engineering"><span id="ctl00_ContentPlaceHolder1_Label26" style="width:290px;font-family:Arial;font-size:12px;">Applied Electronics & Instrumentation Engineering <br />    (B.Tech & M.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="BT.aspx" style="text-decoration:none;color:Black;" title="Biotechnology"><span id="ctl00_ContentPlaceHolder1_Label27" style="width:290px;font-family:Arial;font-size:12px;">Biotechnology   -   (B.Tech & M.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="ChemEngg.aspx" style="text-decoration:none;color:Black;" title="Chemical Engineering"><span id="ctl00_ContentPlaceHolder1_Label28" style="width:290px;font-family:Arial;font-size:12px;">Chemical Engineering   -   (B.Tech & M.Tech(RE))</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="CE.aspx" style="text-decoration:none;color:Black;" title="Civil Engineering"><span id="ctl00_ContentPlaceHolder1_Label29" style="width:290px;font-family:Arial;font-size:12px;">Civil Engineering   -   (B.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="CSE.aspx" style="text-decoration:none;color:Black;" title="Computer Science & Engineering"><span id="ctl00_ContentPlaceHolder1_Label30" style="width:290px;font-family:Arial;font-size:12px;">Computer Science & Engineering<br />    (B.Tech & M.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="EE.aspx" style="text-decoration:none;color:Black;" title="Electrical Engineering"><span id="ctl00_ContentPlaceHolder1_Label31" style="width:290px;font-family:Arial;font-size:12px;">Electrical Engineering   -   (B.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="ECE.aspx" style="text-decoration:none;color:Black;" title="Electronics & Communication Engineering"><span id="ctl00_ContentPlaceHolder1_Label32" style="width:290px;font-family:Arial;font-size:12px;">Electronics & Communication Engineering<br />    (B.Tech & M.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="ECE.aspx" style="text-decoration:none;color:Black;" title="VLSI"><span id="ctl00_ContentPlaceHolder1_Label5" style="width:290px;font-family:Arial;font-size:12px;">VLSI    (M.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="IT.aspx" style="text-decoration:none;color:Black;" title="Information Technology"><span id="ctl00_ContentPlaceHolder1_Label33" style="width:290px;font-family:Arial;font-size:12px;">Information Technology    (B.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="ME.aspx" style="text-decoration:none;color:Black;" title="Mechanical Engineering"><span id="ctl00_ContentPlaceHolder1_Label34" style="width:290px;font-family:Arial;font-size:12px;">Mechanical Engineering  -  (B.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="MCA1.aspx" style="text-decoration:none;color:Black;" title="Master in Computer Application"><span id="ctl00_ContentPlaceHolder1_Label35" style="width:290px;font-family:Arial;font-size:12px;">Master in Computer Application  -  (MCA)</span></a><br />
+                                </td>
+	</tr>
+	<tr>
+		<td style="height:30px;background-color:#217BC5;border-top:3px solid #010F1A;border-bottom:3px solid #010F1A;">
+                                    &nbsp;
+                                  <span id="ctl00_ContentPlaceHolder1_Label36" style="font-family:Arial;font-size:14px;color:White;font-weight:bold;">Other Departments</span>
+                                </td>
+	</tr>
+	<tr>
+		<td style="height:80px;" valign="top">
+                            
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="Chemistry.aspx" style="text-decoration:none;color:Black;" title="Chemistry"><span id="ctl00_ContentPlaceHolder1_Label37" style="width:290px;font-family:Arial;font-size:12px;">Chemistry</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="Humanities.aspx" style="text-decoration:none;color:Black;" title="Humanities"><span id="ctl00_ContentPlaceHolder1_Label38" style="width:290px;font-family:Arial;font-size:12px;">Humanities</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="Mathematics.aspx" style="text-decoration:none;color:Black;" title="Mathematics"><span id="ctl00_ContentPlaceHolder1_Label39" style="width:290px;font-family:Arial;font-size:12px;">Mathematics</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="Physics.aspx" style="text-decoration:none;color:Black;" title="Physics"><span id="ctl00_ContentPlaceHolder1_Label40" style="width:290px;font-family:Arial;font-size:12px;">Physics</span></a><br />
+                                </td>
+	</tr>
+	<tr>
+		<td style="height:30px;background-color:#217BC5;border-top:3px solid #010F1A;border-bottom:3px solid #010F1A;">
+                                    &nbsp;
+                                  <span id="ctl00_ContentPlaceHolder1_Label41" style="font-family:Arial;font-size:14px;color:White;font-weight:bold;">Programmes</span>
+                                </td>
+	</tr>
+	<tr>
+		<td style="height:80px;" valign="top">
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="UndergraduateProgms.aspx" style="text-decoration:none;color:Black;" title="Undergraduate Programmes (B.Tech)"><span id="ctl00_ContentPlaceHolder1_Label42" style="width:290px;font-family:Arial;font-size:12px;">Undergraduate Programmes (B.Tech)</span></a><br />
+                                    <img src="imagesHITK/rightarrow.png" style="height:10px;width:10px;" alt="arrow" />
+                                    <a href="PostgraduateProgms.aspx" style="text-decoration:none;color:Black;" title="Postgraduate Programmes (M.Tech & MCA)"><span id="ctl00_ContentPlaceHolder1_Label43" style="width:290px;font-family:Arial;font-size:12px;">Postgraduate Programmes (M.Tech & MCA)</span></a><br />
+                                </td>
+	</tr>
+</table>
+
+            </td>
+        </tr>
+        <tr>
+            
+            <td style="height:10px;">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            
+            <td style="height:auto;" valign="top">
+                &nbsp;                       
+            </td>
+        </tr>
+        <tr>
+            
+            <td style="height:auto;">
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+
+
+    </div>
+   
+</body>
+<br /><br /><br /><br /><br />
+    <div id="headerbg_footer1">
+        <div id="container_footer1">
+        
+
+            <table style="width:1000px;height:100px;white-space:nowrap;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr style="height:100px;">
+                    <td style="color:White;text-align:left;width:300px;vertical-align:middle;">
+                        <font style="font-family:Arial;font-size:14px;font-weight:bold;top:235px;">Heritage Institute of Technology</font><br />
+                        <font style="font-family:Arial;font-size:14px;top:235px;">994 Madurdaha, Chowbaga Road, Anandapur</font><br />
+                        <font style="font-family:Arial;font-size:14px;top:235px;">PO:East Kolkata Township, Kolkata 700 107</font><br />
+                        <font style="font-family:Arial;font-size:14px;top:235px;">Ph: +91 33 6627 0600 / 0609 / 0614 / 0622</font><br />
+                        <font style="font-family:Arial;font-size:14px;top:235px;">Fax: +91 33 2443 0455 / 1794</font><br />
+                        <font style="font-family:Arial;font-size:14px;top:235px;">E-mail: admin@heritageit.edu </font>
+                    </td>
+                    <td style="color:White;width:550px; vertical-align:middle;" align="center">
+                        <font style="font-family:Arial;font-size:15px;font-weight:bold;font-style:italic;">INFO DESK: 9830201234</font>
+
+                    </td>
+                    <td style="color:White;text-align:left;width:200px;border-left:1px solid white;">
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <font style="font-family:Arial;font-size:15px;font-weight:bold;font-style:italic;">Other Heritage Group Institutions</font><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <font style="font-family:Arial;font-size:14px;top:235px;">-  <a href="http://www.theheritageschool.org/index.php" target="_blank" style="text-decoration:none;color:White;">The Heritage School</a></font>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <font style="font-family:Arial;font-size:14px;top:235px;">-  <a href="http://hbs.edu.in/" target="_blank" style="text-decoration:none;color:White;">Heritage Business School</a></font><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <font style="font-family:Arial;font-size:14px;top:235px;">-  <a href="http://www.theheritageacademy.in/" target="_blank" style="text-decoration:none;color:White;">The Heritage Academy</a></font>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <font style="font-family:Arial;font-size:14px;top:0px;left:1px;position:relative">-  <a href="http://www.hlc.edu.in/" target="_blank" style="text-decoration:none;color:White;">Heritage Law College</a></font><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <font style="font-family:Arial;font-size:14px;top:235px;">-  <a href="http://www.thc.edu.in/" target="_blank" style="text-decoration:none;color:White;">The Heritage College</a></font>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+
+            
+        </div>
+    </div>
+    <div id="headerbg_footer2">
+        <div id="container_footer2">
+            
+            <table style="width:1000px;height:60px;white-space:nowrap;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr style="height:30px;">
+                    <td style="color:White;text-align:left;width:300px;vertical-align:middle;">
+                        <a href="Announcement.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>Announcements</font></a>
+                        <font style="font-family:Arial;font-size:14px;">|</font>
+                        <a href="Events1.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>Events</font></a>
+                        <font style="font-family:Arial;font-size:14px;">|</font>
+                        <a href="News.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>News</font></a>
+                        <font style="font-family:Arial;font-size:14px;">|</font>
+                        <a href="GrievanceCell.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>Grievance Redressal</font></a>
+                        <font style="font-family:Arial;font-size:14px;">|</font> 
+                        <a href="Notice.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>Notice</font></a>
+                        <font style="font-family:Arial;font-size:14px;">|</font>
+                        <a href="Newsletter.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>Newsletter</font></a>
+                        <font style="font-family:Arial;font-size:14px;">|</font>
+                        <a href="Jobs.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>Jobs</font></a>
+                        <font style="font-family:Arial;font-size:14px;">|</font>
+                        <a href="Tender.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>Tender</font></a>
+                        <font style="font-family:Arial;font-size:14px;">|</font>
+                        <a href="Feedback.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>Feedback</font></a>
+                        <font style="font-family:Arial;font-size:14px;">|</font>
+                        <a href="ImageGallery.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:White;"><font>Gallery</font></a>
+                         
+                    </td>
+                </tr>
+                <tr style="height:30px;" align="center">
+                    <td>
+                        <font style="font-family:Arial;font-size:10px;color:White;">Copyright &copy; 2025, Heritage Institute of Technology, All right reserved.</font>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    <div id="header_footer">
+        <div id="Container_footer">
+            
+            <table style="width:1000px;height:5px;white-space:nowrap;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="color:White;text-align:left;vertical-align:middle;">
+
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+     </div>
+</html>
+
+
+
+    
+
+ 
+           
+        
+        
+   
+    
+    
+
+       
+       
+       
+     
+
+
+    
+ 
+
+
+
+    
+        
+  
+        
+                
+    
+    
+        
+
+    
+    
+    
+    
+    
+    
+       
+    
