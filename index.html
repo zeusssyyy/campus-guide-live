@@ -29,10 +29,10 @@
         <ul class="nav-links">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#map">Campus Map</a></li>
+            <li><a href="#navigation">Navigation</a></li>
             <li><a href="#locations">Locations</a></li>
             <li><a href="#schedule">Class Timings</a></li>
             <li><a href="#resources">Resources</a></li>
-            <li><a href="#events">Events</a></li>
         </ul>
         <div class="menu-toggle" id="mobile-menu">
             <i class='bx bx-menu'></i>
@@ -51,7 +51,6 @@
             <p class="subtitle">Welcome to your ultimate interactive campus experience in Kolkata, India.</p>
             <div class="cta-buttons">
                 <a href="#map" class="btn btn-primary">Explore Campus</a>
-                <a href="#events" class="btn btn-secondary">Upcoming Events</a>
             </div>
         </div>
         <div class="scroll-down">
@@ -67,35 +66,71 @@
             <p>Navigate the sprawling high-tech campus with ease.</p>
         </div>
         <div class="map-container">
-            <div class="map-wrapper">
-                <img src="assets/map.png" alt="3D Campus Map" id="campus-map-img">
-
-                <!-- Map Hotspots -->
-                <div class="hotspot" style="top: 30%; left: 45%;" data-title="Central Library"
-                    data-desc="State-of-the-art reading spaces and vast collections.">
-                    <div class="pulse-ring"></div>
-                    <i class='bx bxs-book-reader'></i>
-                </div>
-                <div class="hotspot" style="top: 60%; left: 70%;" data-title="Tech Labs"
-                    data-desc="Advanced laboratories for CSE, ECE, and IT.">
-                    <div class="pulse-ring"></div>
-                    <i class='bx bxs-microchip'></i>
-                </div>
-                <div class="hotspot" style="top: 45%; left: 20%;" data-title="Cafeteria"
-                    data-desc="Multi-cuisine food court and hang-out spot.">
-                    <div class="pulse-ring"></div>
-                    <i class='bx bxs-coffee'></i>
-                </div>
-                <div class="hotspot" style="top: 75%; left: 40%;" data-title="Main Auditorium"
-                    data-desc="Events, seminars, and cultural fests.">
-                    <div class="pulse-ring"></div>
-                    <i class='bx bxs-microphone-alt'></i>
-                </div>
+            <div class="map-wrapper" style="height: 500px;">
+                <iframe src="https://maps.google.com/maps?q=22.5185,88.4163&t=k&z=17&ie=UTF8&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <div class="map-info-panel glass-panel" id="map-info">
-                <h3>Select a location</h3>
-                <p>Click on the glowing hotspots on the map to view details.</p>
+                <h3>Campus View</h3>
+                <p>Explore the sprawling high-tech campus using the interactive satellite view from above. You can pan, zoom, and click on Google's map labels to view more details about specific buildings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Turn-by-Turn Navigation -->
+    <section class="section" id="navigation" style="background: linear-gradient(to bottom, var(--bg-base), var(--bg-darker));">
+        <div class="section-header">
+            <h2>Step-by-Step <span class="highlight">Navigation</span></h2>
+            <p>Select a route and follow the visual guide to reach your destination.</p>
+        </div>
+        
+        <div class="nav-guide-container">
+            <!-- Route Selector -->
+            <div class="route-selector-container glass-panel">
+                <div class="input-group">
+                    <label for="route-select">Choose Your Route</label>
+                    <select id="route-select" class="glass-select">
+                        <option value="" disabled selected>Select a route...</option>
+                        <option value="central">Gate 9 to Central Building</option>
+                        <option value="cme">Gate 9 to CME Building</option>
+                        <option value="ict">Gate 9 to ICT Building</option>
+                        <option value="library">Gate 9 to Library</option>
+                        <option value="canteen">Gate 9 to Canteen</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Navigation Viewer -->
+            <div id="nav-viewer" style="display: none;">
+                <div class="nav-viewer-grid">
+                    <!-- Image Area -->
+                    <div class="nav-image-wrapper glass-panel">
+                        <img id="nav-step-img" src="assets/hero.png" alt="Navigation Step">
+                        <div class="step-counter" id="nav-step-counter">Step 1 of 4</div>
+                    </div>
+                    
+                    <!-- Instructions Area -->
+                    <div class="nav-instructions-panel glass-panel">
+                        <h3 id="nav-step-title" style="color: var(--accent-primary); margin-bottom: 10px;">Enter Main Gate</h3>
+                        <p id="nav-step-desc" style="font-size: 1.1rem; margin-bottom: 30px;">Walk through the main entrance and head straight past the administrative block.</p>
+                        
+                        <div class="nav-controls">
+                            <button id="nav-prev-btn" class="btn btn-secondary" disabled><i class='bx bx-left-arrow-alt'></i> Previous</button>
+                            <button id="nav-next-btn" class="btn btn-primary">Next <i class='bx bx-right-arrow-alt'></i></button>
+                        </div>
+                        
+                        <!-- Progress Dots -->
+                        <div class="nav-progress-dots" id="nav-progress-dots">
+                            <!-- Dots injected dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="nav-placeholder" class="placeholder-message">
+                <div class="icon-wrapper" style="margin: 0 auto 20px;"><i class='bx bx-map-pin'></i></div>
+                <h3>Ready to Explore?</h3>
+                <p>Select a route from the dropdown above to start your visual navigation.</p>
             </div>
         </div>
     </section>
@@ -118,9 +153,26 @@
         <div class="grid-container" id="location-grid">
             <!-- Location Cards -->
             <div class="card location-card mix academic">
-                <div class="card-img">
-                    <img src="https://www.heritageit.edu/imagesHITK/HIT1_270625.jpg" alt="Central Library">
-                    <div class="card-badge">Academic</div>
+                <div class="card-img library-slideshow-container" id="library-slideshow">
+                    <img class="library-slide active" src="assets/library_gallery/photo 1.jpeg" alt="Central Library Photo 1">
+                    <img class="library-slide" src="assets/library_gallery/photo 2.jpeg" alt="Central Library Photo 2">
+                    <img class="library-slide" src="assets/library_gallery/photo 3.jpeg" alt="Central Library Photo 3">
+                    <img class="library-slide" src="assets/library_gallery/photo 4.jpeg" alt="Central Library Photo 4">
+                    <img class="library-slide" src="assets/library_gallery/photo 5.jpeg" alt="Central Library Photo 5">
+                    <img class="library-slide" src="assets/library_gallery/photo 6.jpeg" alt="Central Library Photo 6">
+                    <div class="card-badge" style="z-index: 10;">Academic</div>
+                    
+                    <button class="slide-btn prev-btn" id="lib-prev-btn"><i class='bx bx-chevron-left'></i></button>
+                    <button class="slide-btn next-btn" id="lib-next-btn"><i class='bx bx-chevron-right'></i></button>
+                    
+                    <div class="slide-indicators">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                    </div>
                 </div>
                 <div class="card-content">
                     <h3>Central Library</h3>
@@ -130,48 +182,108 @@
                 </div>
             </div>
 
-            <!-- Placeholder Cards for other locations -->
-            <div class="card location-card mix academic">
-                <div class="card-img">
-                    <div class="placeholder-img bg-gradient-1">
-                        <i class='bx bx-laptop'></i>
+            <!-- Campus Card -->
+            <div class="card location-card mix amenity">
+                <div class="card-img campus-slideshow-container" id="campus-slideshow">
+                    <img class="campus-slide active" src="assets/campus_gallery/photo 1.jpeg" alt="Campus Photo 1">
+                    <img class="campus-slide" src="assets/campus_gallery/photo 2.jpeg" alt="Campus Photo 2">
+                    <img class="campus-slide" src="assets/campus_gallery/photo 3.jpeg" alt="Campus Photo 3">
+                    <img class="campus-slide" src="assets/campus_gallery/photo 4.jpeg" alt="Campus Photo 4">
+                    <img class="campus-slide" src="assets/campus_gallery/photo 5.jpeg" alt="Campus Photo 5">
+                    <img class="campus-slide" src="assets/campus_gallery/photo 6.jpeg" alt="Campus Photo 6">
+                    <img class="campus-slide" src="assets/campus_gallery/photo 7.jpeg" alt="Campus Photo 7">
+                    <img class="campus-slide" src="assets/campus_gallery/photo 8.jpeg" alt="Campus Photo 8">
+                    <img class="campus-slide" src="assets/campus_gallery/photo 10.jpeg" alt="Campus Photo 10">
+                    <img class="campus-slide" src="assets/campus_gallery/photo 11.jpeg" alt="Campus Photo 11">
+                    <div class="card-badge" style="z-index: 10;">Amenity</div>
+                    
+                    <button class="slide-btn prev-btn" id="cam-prev-btn"><i class='bx bx-chevron-left'></i></button>
+                    <button class="slide-btn next-btn" id="cam-next-btn"><i class='bx bx-chevron-right'></i></button>
+                    
+                    <div class="slide-indicators">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                        <span class="dot" data-slide="6"></span>
+                        <span class="dot" data-slide="7"></span>
+                        <span class="dot" data-slide="8"></span>
+                        <span class="dot" data-slide="9"></span>
                     </div>
-                    <div class="card-badge">Academic</div>
                 </div>
                 <div class="card-content">
-                    <h3>ICT Bhavan</h3>
-                    <p>The hub of computer science and IT departments featuring cutting edge labs.</p>
+                    <h3>Campus</h3>
+                    <p>Located on Chowbaga Road, our campus is exquisitely landscaped with intertwined roads and lush greenery, providing a serene and intellectually stimulating environment.</p>
+                    <a href="https://heritageit.edu/Campus.aspx" target="_blank" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+
+            <!-- Main Cafeteria -->
+            <div class="card location-card mix amenity">
+                <div class="card-img canteen-slideshow-container" id="canteen-slideshow">
+                    <img class="canteen-slide active" src="assets/canteen_gallery/photo 1.jpeg" alt="Canteen Photo 1">
+                    <img class="canteen-slide" src="assets/canteen_gallery/photo 2.jpeg" alt="Canteen Photo 2">
+                    <div class="card-badge" style="z-index: 10;">Amenity</div>
+                    
+                    <button class="slide-btn prev-btn" id="cant-prev-btn"><i class='bx bx-chevron-left'></i></button>
+                    <button class="slide-btn next-btn" id="cant-next-btn"><i class='bx bx-chevron-right'></i></button>
+                    
+                    <div class="slide-indicators">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Main Cafeteria (Canteen)</h3>
+                    <p>Accommodates over 200 students. Offers a variety of multi-cuisine lunch options and snacks prepared in a hygienic kitchen at reasonable prices.</p>
                     <a href="#" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
             </div>
 
+            <!-- Sports Facilities -->
             <div class="card location-card mix recreation">
                 <div class="card-img">
-                    <div class="placeholder-img bg-gradient-2">
+                    <div class="placeholder-img bg-gradient-3">
                         <i class='bx bx-football'></i>
                     </div>
                     <div class="card-badge">Recreation</div>
                 </div>
                 <div class="card-content">
-                    <h3>Sports Complex & Playground</h3>
-                    <p>Extensive outdoor facilities for cricket, football, basketball, and golf, plus indoor table
-                        tennis and carrom.</p>
-                    <a href="#" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                    <h3>Sports Facilities</h3>
+                    <p>Features a common room for indoor games like Table Tennis, Carom, and Chess, alongside professional instructor-led outdoor sports including cricket, football, basketball, golf, and swimming.</p>
+                    <a href="https://heritageit.edu/SportsFacilities.aspx" target="_blank" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
             </div>
 
+            <!-- Hostel -->
             <div class="card location-card mix amenity">
                 <div class="card-img">
-                    <div class="placeholder-img bg-gradient-3">
-                        <i class='bx bxs-pizza'></i>
+                    <div class="placeholder-img bg-gradient-1">
+                        <i class='bx bx-bed'></i>
                     </div>
                     <div class="card-badge">Amenity</div>
                 </div>
                 <div class="card-content">
-                    <h3>Main Cafeteria (Canteen)</h3>
-                    <p>Accommodates over 200 students. Offers a variety of multi-cuisine lunch options and snacks
-                        prepared in a hygienic kitchen at reasonable prices.</p>
-                    <a href="#" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                    <h3>Hostel</h3>
+                    <p>Comfortable separate boarding and lodging facilities are available for outstation boys and girls.</p>
+                    <a href="https://heritageit.edu/Hostel.aspx" target="_blank" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+
+            <!-- Computer Centre -->
+            <div class="card location-card mix academic">
+                <div class="card-img">
+                    <div class="placeholder-img bg-gradient-2">
+                        <i class='bx bx-laptop'></i>
+                    </div>
+                    <div class="card-badge">Academic</div>
+                </div>
+                <div class="card-content">
+                    <h3>Computer Centre</h3>
+                    <p>A centralized service centre equipped with over 600 terminals, printers, and a 200Mbps internet connection, supporting programming, projects, and seminar preparation.</p>
+                    <a href="https://heritageit.edu/ComputerCentre.aspx" target="_blank" class="btn-text">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
             </div>
         </div>

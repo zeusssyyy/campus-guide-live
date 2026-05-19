@@ -79,6 +79,171 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Turn-by-Turn Navigation Logic ---
+    const navigationData = {
+        'central': [
+            { title: "Step 1", desc: "Enter through gate 9", img: "assets/routes/central/enter through gate 9.jpeg" },
+            { title: "Step 2", desc: "Go straight after entering", img: "assets/routes/central/go straight after entering .jpeg" },
+            { title: "Step 3", desc: "Go straight", img: "assets/routes/central/go straight (1).jpeg" },
+            { title: "Step 4", desc: "Go straight", img: "assets/routes/central/go straight(2).jpeg" },
+            { title: "Step 5", desc: "Go straight", img: "assets/routes/central/go straight(3).jpeg" },
+            { title: "Step 6", desc: "Go straight crossing cme and go straight", img: "assets/routes/central/go straight crossing cme and go straight.jpeg" },
+            { title: "Step 7", desc: "Go straight crossing the garden on your left", img: "assets/routes/central/go straight crossing the garden on your left.jpeg" },
+            { title: "Step 8", desc: "Turn left after the upcoming speed breaker on the road", img: "assets/routes/central/turn left after the upcoming speed breaker on the road.jpeg" },
+            { title: "Step 9", desc: "Go towards this building and on its left side and central building is in front of yu", img: "assets/routes/central/go towards this building and on its left side and central building is in front of yu.jpeg" }
+        ],
+        'cme': [
+            { title: "Step 1", desc: "Gate 9", img: "assets/routes/cme/gate 9.jpeg" },
+            { title: "Step 2", desc: "Path after crossing gate 9", img: "assets/routes/cme/path after crossing gate 9.jpeg" },
+            { title: "Step 3", desc: "Cme will be on your left", img: "assets/routes/cme/cme will be on your left.jpeg" },
+            { title: "Step 4", desc: "Cme will be on your left", img: "assets/routes/cme/cme will be on your leftt.jpeg" }
+        ],
+        'ict': [
+            { title: "Step 1", desc: "Enter through gate 9", img: "assets/routes/ict/enter through gate 9.jpeg" },
+            { title: "Step 2", desc: "Go straight after entering", img: "assets/routes/ict/go straight after entering .jpeg" },
+            { title: "Step 3", desc: "Go straight", img: "assets/routes/ict/go straight (1).jpeg" },
+            { title: "Step 4", desc: "Go straight", img: "assets/routes/ict/go straight(2).jpeg" },
+            { title: "Step 5", desc: "Go straight", img: "assets/routes/ict/go straight(3).jpeg" },
+            { title: "Step 6", desc: "Go straight crossing cme and go straight", img: "assets/routes/ict/go straight crossing cme and go straight.jpeg" },
+            { title: "Step 7", desc: "Go straight crossing the garden on your left", img: "assets/routes/ict/go straight crossing the garden on your left.jpeg" },
+            { title: "Step 8", desc: "Go straight crossing the building on your left", img: "assets/routes/ict/go straight crossing the building on your left.jpeg" },
+            { title: "Step 9", desc: "Go straight crossing the second garden on your left", img: "assets/routes/ict/go straight crossing the second garden on your left.jpeg" },
+            { title: "Step 10", desc: "Turn left from here", img: "assets/routes/ict/turn left from here.jpeg" },
+            { title: "Step 11", desc: "Go straight from here", img: "assets/routes/ict/go straight from here.jpeg" },
+            { title: "Step 12", desc: "Then after a few meters you will find the ict building on your right", img: "assets/routes/ict/then after a few meters you will find the ict building on your right.jpeg" }
+        ],
+        'library': [
+            { title: "Step 1", desc: "Enter through gate 9", img: "assets/routes/library/enter through gate 9.jpeg" },
+            { title: "Step 2", desc: "Go straight after entering", img: "assets/routes/library/go straight after entering .jpeg" },
+            { title: "Step 3", desc: "Go straight", img: "assets/routes/library/go straight (1).jpeg" },
+            { title: "Step 4", desc: "Go straight", img: "assets/routes/library/go straight(2).jpeg" },
+            { title: "Step 5", desc: "Go straight", img: "assets/routes/library/go straight(3).jpeg" },
+            { title: "Step 6", desc: "Go straight crossing cme and go straight", img: "assets/routes/library/go straight crossing cme and go straight.jpeg" },
+            { title: "Step 7", desc: "Go straight crossing the garden on your left", img: "assets/routes/library/go straight crossing the garden on your left.jpeg" },
+            { title: "Step 8", desc: "Go straight crossing the building on your left", img: "assets/routes/library/go straight crossing the building on your left.jpeg" },
+            { title: "Step 9", desc: "Turn left after the upcoming speed breaker on the road", img: "assets/routes/library/turn left after the upcoming speed breaker on the road.jpeg" },
+            { title: "Step 10", desc: "Go towards this building and on its left side youll find the entrance to the librarry", img: "assets/routes/library/go towards this building and on its left side youll find the entrance to the librarry.jpeg" },
+            { title: "Step 11", desc: "This is the entrance to the library", img: "assets/routes/library/this is the entrance to the library.jpeg" },
+            { title: "Step 12", desc: "Go down the stairs", img: "assets/routes/library/go down the stairs.jpeg" },
+            { title: "Step 13", desc: "Keep your bags inside this baggage counter", img: "assets/routes/library/keep your bags inside this baggage counter .jpeg" },
+            { title: "Step 14", desc: "And enjoy the knowledge", img: "assets/routes/library/and enjoy the knowledge .jpeg" }
+        ],
+        'canteen': [
+            { title: "Step 1", desc: "Enter through gate 9", img: "assets/routes/canteen/enter through gate 9.jpeg" },
+            { title: "Step 2", desc: "Go straight after entering", img: "assets/routes/canteen/go straight after entering .jpeg" },
+            { title: "Step 3", desc: "Go straight", img: "assets/routes/canteen/go straight (1).jpeg" },
+            { title: "Step 4", desc: "Go straight", img: "assets/routes/canteen/go straight(2).jpeg" },
+            { title: "Step 5", desc: "Go straight", img: "assets/routes/canteen/go straight(3).jpeg" },
+            { title: "Step 6", desc: "Go straight crossing cme and go straight", img: "assets/routes/canteen/go straight crossing cme and go straight.jpeg" },
+            { title: "Step 7", desc: "Go straight crossing the garden on your left", img: "assets/routes/canteen/go straight crossing the garden on your left.jpeg" },
+            { title: "Step 8", desc: "Go straight crossing the building on your left", img: "assets/routes/canteen/go straight crossing the building on your left.jpeg" },
+            { title: "Step 9", desc: "Go straight crossing the second garden on your left", img: "assets/routes/canteen/go straight crossing the second garden on your left.jpeg" },
+            { title: "Step 10", desc: "Keep going straight", img: "assets/routes/canteen/keep going straight.jpeg" },
+            { title: "Step 11", desc: "Keep going straight crossing the heritage academy on your left", img: "assets/routes/canteen/keep going straight crossing the heritage academy on your left.jpeg" },
+            { title: "Step 12", desc: "Keep going straight along the ground", img: "assets/routes/canteen/keep going straight along the ground.jpeg" },
+            { title: "Step 13", desc: "Take a right from here", img: "assets/routes/canteen/take a right from here.jpeg" },
+            { title: "Step 14", desc: "And take a left from here", img: "assets/routes/canteen/and take a left from here.jpeg" },
+            { title: "Step 15", desc: "Go straight for a few meters and you will find the canteen on your right", img: "assets/routes/canteen/go straight for a few meters and you will find the canteen on your right.jpeg" }
+        ]
+    };
+
+
+    const routeSelect = document.getElementById('route-select');
+    const navViewer = document.getElementById('nav-viewer');
+    const navPlaceholder = document.getElementById('nav-placeholder');
+    
+    const navImg = document.getElementById('nav-step-img');
+    const navCounter = document.getElementById('nav-step-counter');
+    const navTitle = document.getElementById('nav-step-title');
+    const navDesc = document.getElementById('nav-step-desc');
+    const navDots = document.getElementById('nav-progress-dots');
+    
+    const btnPrev = document.getElementById('nav-prev-btn');
+    const btnNext = document.getElementById('nav-next-btn');
+
+    let currentRoute = null;
+    let currentStepIndex = 0;
+
+    function renderNavStep() {
+        if (!currentRoute) return;
+        const steps = navigationData[currentRoute];
+        const step = steps[currentStepIndex];
+
+        // Animate image transition
+        navImg.style.opacity = 0;
+        setTimeout(() => {
+            navImg.src = step.img;
+            navImg.style.opacity = 1;
+        }, 300);
+
+        navTitle.textContent = step.title;
+        navDesc.textContent = step.desc;
+        navCounter.textContent = `Step ${currentStepIndex + 1} of ${steps.length}`;
+
+        // Update Buttons
+        btnPrev.disabled = currentStepIndex === 0;
+        
+        if (currentStepIndex === steps.length - 1) {
+            btnNext.innerHTML = `<i class='bx bx-check-circle'></i> Finish`;
+            btnNext.classList.remove('btn-primary');
+            btnNext.classList.add('btn-secondary');
+        } else {
+            btnNext.innerHTML = `Next <i class='bx bx-right-arrow-alt'></i>`;
+            btnNext.classList.remove('btn-secondary');
+            btnNext.classList.add('btn-primary');
+        }
+
+        // Update Dots
+        Array.from(navDots.children).forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentStepIndex);
+        });
+    }
+
+    routeSelect.addEventListener('change', (e) => {
+        currentRoute = e.target.value;
+        currentStepIndex = 0;
+        
+        const steps = navigationData[currentRoute];
+        
+        // Generate Dots
+        navDots.innerHTML = '';
+        steps.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'nav-dot';
+            if (i === 0) dot.classList.add('active');
+            navDots.appendChild(dot);
+        });
+
+        navPlaceholder.style.display = 'none';
+        navViewer.style.display = 'block';
+        
+        renderNavStep();
+    });
+
+    btnNext.addEventListener('click', () => {
+        const steps = navigationData[currentRoute];
+        if (currentStepIndex < steps.length - 1) {
+            currentStepIndex++;
+            renderNavStep();
+        } else {
+            // Finish state - reset
+            routeSelect.value = '';
+            currentRoute = null;
+            navViewer.style.display = 'none';
+            navPlaceholder.style.display = 'block';
+            
+            // Scroll to top of section
+            document.getElementById('navigation').scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    btnPrev.addEventListener('click', () => {
+        if (currentStepIndex > 0) {
+            currentStepIndex--;
+            renderNavStep();
+        }
+    });
+
     // --- Dynamic Class Timings Logic ---
     const routinesData = {
         cse: {
@@ -98,49 +263,49 @@ document.addEventListener('DOMContentLoaded', () => {
                         { time: "02:00 PM - 04:00 PM", subject: "Gr1: CA Lab / Gr2: DE Lab", room: "Lab" }
                     ],
                     wednesday: [
-                        { time: "09:00 AM - 11:00 AM", subject: "Gr1: OS Lab / Gr2: CA Lab", room: "Lab" },
+                        { time: "09:00 AM - 11:00 AM", subject: "Gr1: COA(DSG) Lab / Gr2: CA Lab", room: "Lab" },
                         { time: "11:00 AM - 12:00 PM", subject: "Library", room: "Library" },
-                        { time: "01:00 PM - 02:00 PM", subject: "OS (PSD)", room: "Room A" },
+                        { time: "01:00 PM - 02:00 PM", subject: "COA(DSG)", room: "Room A" },
                         { time: "02:00 PM - 03:00 PM", subject: "OOP (DJ)", room: "Room A" },
                         { time: "03:00 PM - 04:00 PM", subject: "DAA (PG)", room: "Room A" },
-                        { time: "04:00 PM - 05:00 PM", subject: "Digital Elec (PPS)", room: "Room A" }
+                        { time: "04:00 PM - 05:00 PM", subject: "MP & MC(DMG)", room: "Room A" }
                     ],
                     thursday: [
-                        { time: "09:00 AM - 10:00 AM", subject: "OS (PSD)", room: "Room A" },
+                        { time: "09:00 AM - 10:00 AM", subject: "COA(DSG)", room: "Room A" },
                         { time: "10:00 AM - 11:00 AM", subject: "Discrete Maths (SG)", room: "Room A" },
-                        { time: "11:00 AM - 12:00 PM", subject: "Digital Elec (PPS)", room: "Room A" },
+                        { time: "11:00 AM - 12:00 PM", subject: "MP & MC(DMG)", room: "Room A" },
                         { time: "01:00 PM - 02:00 PM", subject: "Discrete Maths (SG)", room: "Room A" },
-                        { time: "02:00 PM - 04:00 PM", subject: "Gr1: DE Lab / Gr2: OS Lab", room: "Lab" },
+                        { time: "02:00 PM - 04:00 PM", subject: "Gr1: DE Lab / Gr2: COA(DSG) Lab", room: "Lab" },
                         { time: "04:00 PM - 05:00 PM", subject: "Library", room: "Library" }
                     ],
                     friday: [
                         { time: "09:00 AM - 10:00 AM", subject: "Discrete Maths (SG)", room: "Room A" },
                         { time: "10:00 AM - 11:00 AM", subject: "OOP (DJ)", room: "Room A" },
-                        { time: "11:00 AM - 12:00 PM", subject: "OS (PSD)", room: "Room A" },
-                        { time: "01:00 PM - 02:00 PM", subject: "OS (PSD)", room: "Room A" },
+                        { time: "11:00 AM - 12:00 PM", subject: "COA(DSG)", room: "Room A" },
+                        { time: "01:00 PM - 02:00 PM", subject: "COA(DSG)", room: "Room A" },
                         { time: "02:00 PM - 03:00 PM", subject: "OOP (DJ)", room: "Room A" },
-                        { time: "03:00 PM - 04:00 PM", subject: "Digital Elec (PPS)", room: "Room A" },
+                        { time: "03:00 PM - 04:00 PM", subject: "MP & MC(DMG)", room: "Room A" },
                         { time: "04:00 PM - 05:00 PM", subject: "Mentoring", room: "Room A" }
                     ]
                 },
                 B: {
                     monday: [
                         { time: "09:00 AM - 10:00 AM", subject: "DAA", room: "Room B" },
-                        { time: "10:00 AM - 11:00 AM", subject: "OS", room: "Room B" },
+                        { time: "10:00 AM - 11:00 AM", subject: "COA(DSG)", room: "Room B" },
                         { time: "01:00 PM - 02:00 PM", subject: "OOP (RRC)", room: "Room B" },
                         { time: "02:00 PM - 04:00 PM", subject: "Gr3: CA Lab / Gr4: DE Lab", room: "Lab" },
                         { time: "04:00 PM - 05:00 PM", subject: "Life Skills", room: "Room B" }
                     ],
                     tuesday: [
-                        { time: "09:00 AM - 11:00 AM", subject: "Gr3: OS Lab / Gr4: OOP Lab", room: "Lab" },
+                        { time: "09:00 AM - 11:00 AM", subject: "Gr3: COA(DSG) Lab / Gr4: OOP Lab", room: "Lab" },
                         { time: "01:00 PM - 02:00 PM", subject: "Library", room: "Library" },
-                        { time: "02:00 PM - 03:00 PM", subject: "Digital Elec (IN)", room: "Room B" },
+                        { time: "02:00 PM - 03:00 PM", subject: "MP & MC(DMG)", room: "Room B" },
                         { time: "03:00 PM - 04:00 PM", subject: "Remedial", room: "Room B" }
                     ],
                     wednesday: [
-                        { time: "09:00 AM - 10:00 AM", subject: "Digital Elec", room: "Room B" },
+                        { time: "09:00 AM - 10:00 AM", subject: "MP & MC(DMG)", room: "Room B" },
                         { time: "10:00 AM - 11:00 AM", subject: "Discrete Maths", room: "Room B" },
-                        { time: "11:00 AM - 12:00 PM", subject: "OS (DBS)", room: "Room B" },
+                        { time: "11:00 AM - 12:00 PM", subject: "COA(DSG)", room: "Room B" },
                         { time: "01:00 PM - 02:00 PM", subject: "OOP (SDB)", room: "Room B" },
                         { time: "02:00 PM - 03:00 PM", subject: "Discrete Maths (AP)", room: "Room B" },
                         { time: "03:00 PM - 04:00 PM", subject: "OOP (RRC)", room: "Room B" },
@@ -149,14 +314,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     thursday: [
                         { time: "09:00 AM - 10:00 AM", subject: "Discrete Maths", room: "Room B" },
                         { time: "10:00 AM - 11:00 AM", subject: "OOP", room: "Room B" },
-                        { time: "11:00 AM - 12:00 PM", subject: "OS (DBS)", room: "Room B" },
-                        { time: "01:00 PM - 02:00 PM", subject: "OS (DBS)", room: "Room B" },
-                        { time: "02:00 PM - 04:00 PM", subject: "Gr3: DE Lab / Gr4: OS Lab", room: "Lab" },
+                        { time: "11:00 AM - 12:00 PM", subject: "COA(DSG)", room: "Room B" },
+                        { time: "01:00 PM - 02:00 PM", subject: "COA(DSG)", room: "Room B" },
+                        { time: "02:00 PM - 04:00 PM", subject: "Gr3: DE Lab / Gr4: COA(DSG) Lab", room: "Lab" },
                         { time: "04:00 PM - 05:00 PM", subject: "Library", room: "Library" }
                     ],
                     friday: [
                         { time: "09:00 AM - 10:00 AM", subject: "DAA", room: "Room B" },
-                        { time: "10:00 AM - 11:00 AM", subject: "Digital Elec", room: "Room B" },
+                        { time: "10:00 AM - 11:00 AM", subject: "MP & MC(DMG)", room: "Room B" },
                         { time: "11:00 AM - 12:00 PM", subject: "Discrete Maths (AP)", room: "Room B" },
                         { time: "01:00 PM - 02:00 PM", subject: "DAA (SCB)", room: "Room B" },
                         { time: "02:00 PM - 04:00 PM", subject: "Gr3: OOP Lab / Gr4: DAA Lab", room: "Lab" }
@@ -164,20 +329,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 C: {
                     monday: [
-                        { time: "09:00 AM - 10:00 AM", subject: "Digital Elec", room: "Room C" },
-                        { time: "10:00 AM - 11:00 AM", subject: "OS", room: "Room C" },
+                        { time: "09:00 AM - 10:00 AM", subject: "MP & MC(DMG)", room: "Room C" },
+                        { time: "10:00 AM - 11:00 AM", subject: "COA(DSG)", room: "Room C" },
                         { time: "11:00 AM - 12:00 PM", subject: "Discrete Maths (SK)", room: "Room C" },
-                        { time: "01:00 PM - 03:00 PM", subject: "Gr5: OS Lab / Gr6: DAA Lab", room: "Lab" },
+                        { time: "01:00 PM - 03:00 PM", subject: "Gr5: COA(DSG) Lab / Gr6: DAA Lab", room: "Lab" },
                         { time: "03:00 PM - 04:00 PM", subject: "Life Skills", room: "Room C" }
                     ],
                     tuesday: [
                         { time: "09:00 AM - 10:00 AM", subject: "DAA", room: "Room C" },
-                        { time: "10:00 AM - 11:00 AM", subject: "OS", room: "Room C" },
+                        { time: "10:00 AM - 11:00 AM", subject: "COA(DSG)", room: "Room C" },
                         { time: "11:00 AM - 12:00 PM", subject: "DAA (SM)", room: "Room C" },
                         { time: "01:00 PM - 02:00 PM", subject: "Discrete Maths (SK)", room: "Room C" },
-                        { time: "02:00 PM - 03:00 PM", subject: "OS (DS)", room: "Room C" },
+                        { time: "02:00 PM - 03:00 PM", subject: "COA(DSG)", room: "Room C" },
                         { time: "03:00 PM - 04:00 PM", subject: "Discrete Maths (SD)", room: "Room C" },
-                        { time: "04:00 PM - 05:00 PM", subject: "Digital Elec (DMG)", room: "Room C" }
+                        { time: "04:00 PM - 05:00 PM", subject: "MP & MC(DMG)", room: "Room C" }
                     ],
                     wednesday: [
                         { time: "09:00 AM - 11:00 AM", subject: "Gr5: CA Lab / Gr6: DE Lab", room: "Lab" },
@@ -187,12 +352,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         { time: "03:00 PM - 05:00 PM", subject: "Gr5: OOP Lab / Gr6: CA Lab", room: "Lab" }
                     ],
                     thursday: [
-                        { time: "09:00 AM - 10:00 AM", subject: "Gr5: DE Lab / Gr6: OS Lab", room: "Lab" },
+                        { time: "09:00 AM - 10:00 AM", subject: "Gr5: DE Lab / Gr6: COA(DSG) Lab", room: "Lab" },
                         { time: "10:00 AM - 11:00 AM", subject: "Library", room: "Library" },
-                        { time: "01:00 PM - 02:00 PM", subject: "OS (DS)", room: "Room C" },
+                        { time: "01:00 PM - 02:00 PM", subject: "COA(DSG)", room: "Room C" },
                         { time: "02:00 PM - 03:00 PM", subject: "DAA (NGB)", room: "Room C" },
                         { time: "03:00 PM - 04:00 PM", subject: "OOP (SDB)", room: "Room C" },
-                        { time: "04:00 PM - 05:00 PM", subject: "Digital Elec (DMG)", room: "Room C" }
+                        { time: "04:00 PM - 05:00 PM", subject: "MP & MC(DMG)", room: "Room C" }
                     ],
                     friday: [
                         { time: "09:00 AM - 11:00 AM", subject: "Gr5: DAA Lab / Gr6: OOP Lab", room: "Lab" },
@@ -297,6 +462,136 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById(dayId).classList.add('active');
         }
     });
+
+    // --- Central Library Slideshow Logic ---
+    const libSlides = document.querySelectorAll('.library-slide');
+    const libDots = document.querySelectorAll('#library-slideshow .dot');
+    const btnLibPrev = document.getElementById('lib-prev-btn');
+    const btnLibNext = document.getElementById('lib-next-btn');
+    let libCurrentSlide = 0;
+    const totalLibSlides = libSlides.length;
+
+    function updateLibSlide(index) {
+        libSlides.forEach(s => s.classList.remove('active'));
+        libDots.forEach(d => d.classList.remove('active'));
+        
+        libSlides[index].classList.add('active');
+        libDots[index].classList.add('active');
+    }
+
+    function nextLibSlide() {
+        libCurrentSlide = (libCurrentSlide + 1) % totalLibSlides;
+        updateLibSlide(libCurrentSlide);
+    }
+
+    function prevLibSlide() {
+        libCurrentSlide = (libCurrentSlide - 1 + totalLibSlides) % totalLibSlides;
+        updateLibSlide(libCurrentSlide);
+    }
+
+    if (btnLibNext && btnLibPrev) {
+        btnLibNext.addEventListener('click', nextLibSlide);
+        btnLibPrev.addEventListener('click', prevLibSlide);
+
+        libDots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                const idx = parseInt(e.target.getAttribute('data-slide'));
+                libCurrentSlide = idx;
+                updateLibSlide(libCurrentSlide);
+            });
+        });
+
+        // Optional: Auto slide every 5 seconds
+        setInterval(nextLibSlide, 5000);
+    }
+
+    // --- Campus Slideshow Logic ---
+    const camSlides = document.querySelectorAll('.campus-slide');
+    const camDots = document.querySelectorAll('#campus-slideshow .dot');
+    const btnCamPrev = document.getElementById('cam-prev-btn');
+    const btnCamNext = document.getElementById('cam-next-btn');
+    let camCurrentSlide = 0;
+    const totalCamSlides = camSlides.length;
+
+    function updateCamSlide(index) {
+        camSlides.forEach(s => s.classList.remove('active'));
+        camDots.forEach(d => d.classList.remove('active'));
+        
+        if (camSlides[index]) camSlides[index].classList.add('active');
+        if (camDots[index]) camDots[index].classList.add('active');
+    }
+
+    function nextCamSlide() {
+        if (totalCamSlides === 0) return;
+        camCurrentSlide = (camCurrentSlide + 1) % totalCamSlides;
+        updateCamSlide(camCurrentSlide);
+    }
+
+    function prevCamSlide() {
+        if (totalCamSlides === 0) return;
+        camCurrentSlide = (camCurrentSlide - 1 + totalCamSlides) % totalCamSlides;
+        updateCamSlide(camCurrentSlide);
+    }
+
+    if (btnCamNext && btnCamPrev) {
+        btnCamNext.addEventListener('click', nextCamSlide);
+        btnCamPrev.addEventListener('click', prevCamSlide);
+
+        camDots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                const idx = parseInt(e.target.getAttribute('data-slide'));
+                camCurrentSlide = idx;
+                updateCamSlide(camCurrentSlide);
+            });
+        });
+
+        // Optional: Auto slide every 5.5 seconds to offset from library
+        setInterval(nextCamSlide, 5500);
+    }
+
+    // --- Canteen Slideshow Logic ---
+    const cantSlides = document.querySelectorAll('.canteen-slide');
+    const cantDots = document.querySelectorAll('#canteen-slideshow .dot');
+    const btnCantPrev = document.getElementById('cant-prev-btn');
+    const btnCantNext = document.getElementById('cant-next-btn');
+    let cantCurrentSlide = 0;
+    const totalCantSlides = cantSlides.length;
+
+    function updateCantSlide(index) {
+        cantSlides.forEach(s => s.classList.remove('active'));
+        cantDots.forEach(d => d.classList.remove('active'));
+        
+        if (cantSlides[index]) cantSlides[index].classList.add('active');
+        if (cantDots[index]) cantDots[index].classList.add('active');
+    }
+
+    function nextCantSlide() {
+        if (totalCantSlides === 0) return;
+        cantCurrentSlide = (cantCurrentSlide + 1) % totalCantSlides;
+        updateCantSlide(cantCurrentSlide);
+    }
+
+    function prevCantSlide() {
+        if (totalCantSlides === 0) return;
+        cantCurrentSlide = (cantCurrentSlide - 1 + totalCantSlides) % totalCantSlides;
+        updateCantSlide(cantCurrentSlide);
+    }
+
+    if (btnCantNext && btnCantPrev) {
+        btnCantNext.addEventListener('click', nextCantSlide);
+        btnCantPrev.addEventListener('click', prevCantSlide);
+
+        cantDots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                const idx = parseInt(e.target.getAttribute('data-slide'));
+                cantCurrentSlide = idx;
+                updateCantSlide(cantCurrentSlide);
+            });
+        });
+
+        // Optional: Auto slide every 6 seconds to offset from others
+        setInterval(nextCantSlide, 6000);
+    }
 
     // --- Smooth Scrolling for Navigation Links ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
