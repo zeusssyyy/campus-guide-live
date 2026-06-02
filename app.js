@@ -1,6 +1,33 @@
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
     
+    // --- Dark/Light Theme Logic ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const rootHtml = document.documentElement;
+
+    // Load theme from localStorage or default to dark
+    const savedTheme = localStorage.getItem('theme');
+    const activeTheme = savedTheme || 'dark';
+    setTheme(activeTheme);
+
+    function setTheme(theme) {
+        rootHtml.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        
+        // Update toggle button icon
+        if (theme === 'light') {
+            themeToggle.innerHTML = "<i class='bx bx-sun'></i>";
+        } else {
+            themeToggle.innerHTML = "<i class='bx bx-moon'></i>";
+        }
+    }
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = rootHtml.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+    });
+
     // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
