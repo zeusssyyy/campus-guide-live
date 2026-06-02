@@ -613,4 +613,187 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- Floating Campus Chatbot Logic ---
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotWindow = document.getElementById('chatbot-window');
+    const chatbotClose = document.getElementById('chatbot-close');
+    const chatbotSend = document.getElementById('chatbot-send');
+    const chatbotInput = document.getElementById('chatbot-input');
+    const chatbotMessages = document.getElementById('chatbot-messages');
+    const chatbotChips = document.getElementById('chatbot-chips');
+
+    // Toggle chatbot window
+    chatbotToggle.addEventListener('click', () => {
+        chatbotWindow.classList.toggle('active');
+        if (chatbotWindow.classList.contains('active')) {
+            chatbotInput.focus();
+        }
+    });
+
+    chatbotClose.addEventListener('click', () => {
+        chatbotWindow.classList.remove('active');
+    });
+
+    // Send message on click or Enter key
+    chatbotSend.addEventListener('click', handleUserSend);
+    chatbotInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            handleUserSend();
+        }
+    });
+
+    // Handle Quick Chips click
+    chatbotChips.addEventListener('click', (e) => {
+        const chip = e.target.closest('.chip-btn');
+        if (chip) {
+            const text = chip.getAttribute('data-input');
+            chatbotInput.value = text;
+            handleUserSend();
+        }
+    });
+
+    // Handle bot button clicks
+    chatbotMessages.addEventListener('click', (e) => {
+        const btn = e.target.closest('.bot-btn');
+        if (btn) {
+            const action = btn.getAttribute('data-action');
+            const target = btn.getAttribute('data-target');
+
+            if (action === 'navigate') {
+                // Set route selector
+                if (routeSelect) {
+                    routeSelect.value = target;
+                    // Trigger change event to load route
+                    routeSelect.dispatchEvent(new Event('change'));
+                }
+                
+                // Scroll to navigation section
+                scrollToSection('#navigation');
+                chatbotWindow.classList.remove('active');
+            } else if (action === 'scroll') {
+                scrollToSection(target);
+                chatbotWindow.classList.remove('active');
+            }
+        }
+    });
+
+    function handleUserSend() {
+        const text = chatbotInput.value.trim();
+        if (!text) return;
+
+        appendMessage(text, 'user');
+        chatbotInput.value = '';
+
+        // Simulate bot reply with typing delay
+        setTimeout(() => {
+            getBotReply(text);
+        }, 600);
+    }
+
+    function appendMessage(text, sender, buttons = []) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chat-message ${sender}`;
+        
+        let htmlContent = `<p>${text}</p>`;
+        if (buttons.length > 0) {
+            buttons.forEach(btn => {
+                htmlContent += `<button class="bot-btn" data-action="${btn.action}" data-target="${btn.target}">${btn.text}</button>`;
+            });
+        }
+
+        messageDiv.innerHTML = htmlContent;
+        chatbotMessages.appendChild(messageDiv);
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+
+    function scrollToSection(selector) {
+        const element = document.querySelector(selector);
+        if (element) {
+            const headerOffset = 80;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    }
+
+    function getBotReply(input) {
+        const cleanInput = input.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "").trim();
+        
+        // Match Greetings
+        if (cleanInput.match(/\b(hi|hello|hey|greetings|yo|sup|help)\b/)) {
+            appendMessage("Hello! 😊 How can I help you navigate the HITK campus today? Choose a location or type where you want to go.", 'bot');
+            return;
+        }
+
+        // Match Canteen
+        if (cleanInput.includes('canteen') || cleanInput.includes('cafeteria') || cleanInput.includes('food') || cleanInput.includes('eat')) {
+            const buttons = [
+                { text: "🚀 Start Navigation", action: "navigate", target: "canteen" },
+                { text: "📍 View on Map", action: "scroll", target: "#map" }
+            ];
+            appendMessage("I found the route to the **Main Cafeteria (Canteen)**! Would you like me to guide you there step-by-step from Gate 9?", 'bot', buttons);
+            return;
+        }
+
+        // Match Library
+        if (cleanInput.includes('library') || cleanInput.includes('book') || cleanInput.includes('read')) {
+            const buttons = [
+                { text: "🚀 Start Navigation", action: "navigate", target: "library" },
+                { text: "📍 View on Map", action: "scroll", target: "#map" }
+            ];
+            appendMessage("I can direct you to the **Central Library**! Ready to start step-by-step visual navigation from Gate 9?", 'bot', buttons);
+            return;
+        }
+
+        // Match CME
+        if (cleanInput.includes('cme') || cleanInput.includes('mechanical') || cleanInput.includes('civil')) {
+            const buttons = [
+                { text: "🚀 Start Navigation", action: "navigate", target: "cme" },
+                { text: "📍 View on Map", action: "scroll", target: "#map" }
+            ];
+            appendMessage("I found directions to the **CME Building** (Mechanical/Civil Engineering block). Would you like to navigate there?", 'bot', buttons);
+            return;
+        }
+
+        // Match ICT
+        if (cleanInput.includes('ict') || cleanInput.includes('computer science') || cleanInput.includes('information technology')) {
+            const buttons = [
+                { text: "🚀 Start Navigation", action: "navigate", target: "ict" },
+                { text: "📍 View on Map", action: "scroll", target: "#map" }
+            ];
+            appendMessage("I have the path to the **ICT Building** (Information Technology & Computer Science labs). Start navigation?", 'bot', buttons);
+            return;
+        }
+
+        // Match Central Building
+        if (cleanInput.includes('central') || cleanInput.includes('admin') || cleanInput.includes('office')) {
+            const buttons = [
+                { text: "🚀 Start Navigation", action: "navigate", target: "central" },
+                { text: "📍 View on Map", action: "scroll", target: "#map" }
+            ];
+            appendMessage("I found the route to the **Central Building** (Administrative Block). Start visual navigation from Gate 9?", 'bot', buttons);
+            return;
+        }
+
+        // Match Map
+        if (cleanInput.includes('map') || cleanInput.includes('satellite') || cleanInput.includes('locate') || cleanInput.includes('where is')) {
+            scrollToSection('#map');
+            appendMessage("Sure! Scrolling you to the **Interactive Campus Map** so you can view the layout from above. 🗺️", 'bot');
+            return;
+        }
+
+        // Match Class Timings/Routine
+        if (cleanInput.includes('routine') || cleanInput.includes('schedule') || cleanInput.includes('timing') || cleanInput.includes('class') || cleanInput.includes('time table')) {
+            scrollToSection('#schedule');
+            appendMessage("I've scrolled you to the **Class Timings** routine scheduler. Please choose your Department and Section to view details! 📅", 'bot');
+            return;
+        }
+
+        // Default Response
+        appendMessage("I'm not sure about that specific query. 😅 Try asking something like: 'Where is the canteen?', 'Take me to the library', or click one of the quick options below!", 'bot');
+    }
 });

@@ -310,6 +310,54 @@
         </div>
     </footer>
 
+    <!-- Campus Assistant Chatbot -->
+    <div class="chatbot-container">
+        <!-- Floating Chat Toggle Button -->
+        <button id="chatbot-toggle" class="chatbot-toggle-btn hover-glow">
+            <i class='bx bx-message-square-detail'></i>
+            <span class="pulse-ring"></span>
+        </button>
+
+        <!-- Chatbot Window -->
+        <div id="chatbot-window" class="chatbot-window glass-panel">
+            <div class="chatbot-header">
+                <div class="bot-info">
+                    <div class="bot-avatar">
+                        <i class='bx bxs-bot'></i>
+                        <span class="status-dot online"></span>
+                    </div>
+                    <div>
+                        <h4>Campus Bot</h4>
+                        <span class="status-text">Online</span>
+                    </div>
+                </div>
+                <button id="chatbot-close" class="close-btn"><i class='bx bx-x'></i></button>
+            </div>
+
+            <div id="chatbot-messages" class="chatbot-messages">
+                <!-- Welcome Message -->
+                <div class="chat-message bot">
+                    <p>Hi! 👋 I'm your HITK Campus Assistant. Ask me to find any place (e.g. "Take me to the library" or "Where is the canteen?") or check schedules!</p>
+                </div>
+            </div>
+
+            <!-- Quick Action Chips -->
+            <div class="chatbot-chips" id="chatbot-chips">
+                <button class="chip-btn" data-input="Go to Library">📚 Library</button>
+                <button class="chip-btn" data-input="Go to Canteen">🍔 Canteen</button>
+                <button class="chip-btn" data-input="Go to CME Building">🏢 CME Building</button>
+                <button class="chip-btn" data-input="Go to ICT Building">💻 ICT Building</button>
+                <button class="chip-btn" data-input="Show class timings">📅 Class Timings</button>
+                <button class="chip-btn" data-input="Show campus map">📍 View Map</button>
+            </div>
+
+            <div class="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Ask me something..." autocomplete="off">
+                <button id="chatbot-send"><i class='bx bx-send'></i></button>
+            </div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
