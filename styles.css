@@ -1390,21 +1390,25 @@ footer {
     color: var(--text-primary);
 }
 
-.helpdesk-card p.phone-num {
+.helpdesk-card p.phone-num,
+.helpdesk-card p.card-detail {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 15px;
     color: var(--accent-secondary);
     line-height: 1.5;
+    text-align: center;
 }
 
-.helpdesk-card p.phone-num a {
+.helpdesk-card p.phone-num a,
+.helpdesk-card p.card-detail a {
     color: inherit;
     text-decoration: none;
     transition: var(--transition-fast);
 }
 
-.helpdesk-card p.phone-num a:hover {
+.helpdesk-card p.phone-num a:hover,
+.helpdesk-card p.card-detail a:hover {
     color: var(--accent-primary);
     text-decoration: underline;
 }

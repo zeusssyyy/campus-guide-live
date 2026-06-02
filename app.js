@@ -820,6 +820,13 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        // Match Helpdesk / Contact / Address / Website
+        if (cleanInput.includes('helpdesk') || cleanInput.includes('help desk') || cleanInput.includes('contact') || cleanInput.includes('phone') || cleanInput.includes('email') || cleanInput.includes('address') || cleanInput.includes('call') || cleanInput.includes('support') || cleanInput.includes('website')) {
+            scrollToSection('#helpdesk');
+            appendMessage("I've scrolled you to the **Admissions & Help Desk** section. Here you can find phone numbers, emails, faxes, the official campus address, and official website links! 📞", 'bot');
+            return;
+        }
+
         // Default Response
         appendMessage("I'm not sure about that specific query. 😅 Try asking something like: 'Where is the canteen?', 'Take me to the library', or click one of the quick options below!", 'bot');
     }
