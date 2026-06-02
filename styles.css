@@ -1363,3 +1363,68 @@ footer {
         bottom: 70px;
     }
 }
+
+/* --- Help Desk Section CSS --- */
+.helpdesk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.helpdesk-card {
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: var(--border-radius-lg);
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpdesk-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.35rem;
+    color: var(--text-primary);
+}
+
+.helpdesk-card p.phone-num {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--accent-secondary);
+    line-height: 1.5;
+}
+
+.helpdesk-card p.phone-num a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.helpdesk-card p.phone-num a:hover {
+    color: var(--accent-primary);
+    text-decoration: underline;
+}
+
+.card-badge-inline {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-glass);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+:root[data-theme="light"] .card-badge-inline {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.helpdesk-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-secondary);
+    box-shadow: 0 12px 30px rgba(6, 182, 212, 0.1);
+}
